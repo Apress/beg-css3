@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Tooltips</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+}
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+#casino {
+    position: relative;
+}
+#casino p {
+    position: absolute;
+    top: 60px;
+    left: -9999px;
+    font-size: 14px;
+    width: 100px;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+#casino:hover p {
+    left: 140px;
+}
+a[href$="formula1.com/"] {
+    position: relative;
+}
+a[href$="formula1.com/"] span {
+    position: absolute;
+    left: -9000px;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    background-color: #006;
+    color: #FFF;
+    padding: 10px;
+}
+a[href$="formula1.com/"]:hover span, a[href$="formula1.com/"]:focus span {
+    left: 20px;
+    top: -160px;
+}
+.floatleft {
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+.figcaption {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.shadow {
+    -webkit-box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+    box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Monaco and Monte Carlo</h1>
+    <div class="floatleft" id="casino"><img src="images/casino.jpg" alt="Casino at Monte Carlo" width="266" height="400" class="shadow">
+        <p id="tooltip1">The casino also houses a theater suitable for opera and ballet.</p>
+    <div class="figcaption">Monte Carlo casino</div></div>
+    <p>Close to the Italian border lies the tiny city state of  Monaco, home to the rich and famous. Surrounded on three sides by France and by  the Mediterranean on the fourth, it&rsquo;s the world&rsquo;s second smallest country by  size. Monaco is a constitutional monarchy that has been ruled by the House of  Grimaldi with only brief interruptions since the thirteenth century.</p>
+    <p>Monaco is perhaps best known for the <a href="http://www.formula1.com/">Formula 1 Grand Prix<span id="f1"> Most F1 races are held on specially constructed circuits. But Monaco is one of a handful of F1 street circuits that also include Valencia, Melbourne, and Singapore.</span></a>. The race, normally held in May, roars through the narrow streets and tight corners. Monaco is also renowned for the Monte  Carlo Casino. The casino was established by the House of Grimaldi in the  mid-nineteenth century as a means of saving the ruling household from  bankruptcy. It wasn&rsquo;t immediately successful, but gained great publicity in  1873 when Joseph Jagger became the man who &ldquo;broke the bank at Monte Carlo.&rdquo; The  bank was the amount of money kept on the roulette table by the croupier. Jagger  was the first to discover a bias in one of the roulette wheels and capitalize  on it.</p>
+</div>
+<script>
+var tip1 = document.getElementById('tooltip1'),
+    f1 = document.getElementById('f1');;
+tip1.addEventListener('touchstart', closeTooltip, false);
+f1.addEventListener('touchstart', closeTooltip, false);
+function closeTooltip(e) {
+	e.preventDefault();
+	e.stopPropagation();
+	var target = e.target.id;
+	target.style.left = "-9999px";
+}
+</script>
+</body>
+</html>

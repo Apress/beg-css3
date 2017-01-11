@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Scaling Elements</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+    min-width: 884px;
+}
+/* Browser-specific properties */
+.scaleimg {
+    -moz-transform: scale(0.66);
+    -ms-transform: scale(0.66);
+    -o-transform: scale(0.66);
+    -webkit-transform: scale(0.66);
+}
+/* Standard properties */
+.scaleimg {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    transform: scale(0.66);
+}
+</style>
+</head>
+
+<body>
+<div id="images"><img src="images/nice_market.jpg" alt="Flower market in Nice" width="400" height="266" class="scaleimg"><img src="images/nice_seafront.jpg" alt="Nice seafront" width="400" height="266" class="scaleimg"></div>
+<p>Nice is a jewel of the Côte d&rsquo;Azur in Southern France.  Surrounded by mountains, its crescent-shaped bay faces the Mediterranean,  blessing it with a mild winter climate. Even when the mountains are covered in  snow, the town normally remains snow-free.</p>
+</body>
+</html>

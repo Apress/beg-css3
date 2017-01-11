@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cross-fading Images</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+}
+img {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+/* Browser-specific properties */
+.frontimg {
+    -moz-transition: opacity 500ms linear;
+    -o-transition: opacity 500ms linear;
+    -webkit-transition: opacity 500ms linear;
+}
+/* Standard property */
+.frontimg {
+    position: absolute;
+    transition: opacity 500ms linear;
+    opacity: 1;
+}
+.frontimg:hover {
+    opacity: 0;
+}
+</style>
+</head>
+
+<body>
+<div id="images"><img src="images/nice_market.jpg" alt="Flower market in Nice" width="400" height="266" class="frontimg"><img src="images/nice_seafront.jpg" alt="Nice seafront" width="400" height="266"></div>
+<p>Nice is a jewel of the Côte d&rsquo;Azur in Southern France.  Surrounded by mountains, its crescent-shaped bay faces the Mediterranean,  blessing it with a mild winter climate. Even when the mountains are covered in  snow, the town normally remains snow-free.</p>
+</body>
+</html>

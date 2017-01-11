@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Text Outlines</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+h1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: teal;
+}
+#examples h1 {
+    color: #C39;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size: 400%;
+    margin: 0.2em 30px;
+}
+.outline {
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.bad-outline {
+    text-shadow: -1px -1px #000, 1px 1px #000;
+}
+.webkit {
+    /* Non-WebKit browsers will use the basic text color */
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke: #000 2px;
+}
+</style>
+</head>
+
+<body>
+<h1>Outlining Text</h1>
+<div id="examples">
+    <h1 class="outline">Four Shadows</h1>
+    <h1 class="bad-outline">Two Shadows</h1>
+    <h1 class="webkit">WebKit Only</h1>
+</div>
+</body>
+</html>

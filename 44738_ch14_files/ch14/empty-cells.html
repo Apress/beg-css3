@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Empty Cells</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 640px;
+}
+table {
+    width: 300px;
+    margin: 10px;
+    float: left;
+    border: #000 solid 5px;
+    empty-cells: hide;
+}
+caption {
+    caption-side: bottom;
+    font-weight: bold;
+    padding-top: 0.5em;
+}
+td {
+    border: #F00 solid 1px;
+    background-color: #FF0;
+}
+.hiddencell {
+    visibility: hidden;
+}
+#table3, #table4 {
+    border-collapse: collapse;
+}
+#table2 td, #table4 td {
+    border: none;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <table>
+        <caption>
+        1. Border-collapse: separate
+        </caption>
+<tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<tr>
+            <td>Seven</td>
+            <td class="hiddencell">Eight</td>
+            <td>Nine</td>
+        </tr>
+        <tr>
+            <td>Ten</td>
+            <td>Eleven</td>
+            <td>Twelve</td>
+        </tr>
+    </table>
+    <table id="table2">
+        <caption>
+        2. Border-collapse: separate &amp; no borders
+        </caption>
+<tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<tr>
+            <td>Seven</td>
+            <td class="hiddencell">Eight</td>
+            <td>Nine</td>
+        </tr>
+        <tr>
+            <td>Ten</td>
+            <td>Eleven</td>
+            <td>Twelve</td>
+        </tr>
+    </table>
+    <table id="table3">
+        <caption>
+        3. Border-collapse: collapse
+        </caption>
+<tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<tr>
+            <td>Seven</td>
+            <td class="hiddencell">Eight</td>
+            <td>Nine</td>
+        </tr>
+        <tr>
+            <td>Ten</td>
+            <td>Eleven</td>
+            <td>Twelve</td>
+        </tr>
+    </table>
+    <table id="table4">
+        <caption>
+        4. Border-collapse: collapse &amp; no borders
+        </caption>
+<tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<tr>
+            <td>Seven</td>
+            <td class="hiddencell">Eight</td>
+            <td>Nine</td>
+        </tr>
+        <tr>
+            <td>Ten</td>
+            <td>Eleven</td>
+            <td>Twelve</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

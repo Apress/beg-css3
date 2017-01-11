@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Improvements to text-decoration</title>
+<style>
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #FFF;
+}
+h1 {
+	color: teal;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.under {
+	text-decoration: underline;
+	-moz-text-decoration-color: red;
+	-moz-text-decoration-style: wavy;
+	text-decoration-color: red;
+	text-decoration-style: wavy;
+}
+.over {
+	text-decoration: overline;
+	color: blue;
+	-moz-text-decoration-color: green;
+	-moz-text-decoration-style: double;
+	text-decoration-color: green;
+	text-decoration-style: double;
+}
+.strike {
+	text-decoration: line-through;
+	-moz-text-decoration-color: red;
+	text-decoration-color: red;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS3 text-decoration</h1>
+<p class="under">This text has a wavy red underline</p>
+<p class="over">This blue text has a green double overline</p>
+<p class="strike">Red seems a good color for deleted text</p>
+</body>
+</html>

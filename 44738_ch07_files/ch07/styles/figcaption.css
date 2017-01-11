@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+p {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+h1 {
+    text-align: center;
+}
+h2, h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0.25em;
+}
+.floatleft {
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+.floatright {
+    float: right;
+    margin: 3px 0 3px 10px;
+}
+.imgcentered {
+    margin: 10px auto;
+    display: block;
+}
+h2 {
+    clear: both;
+}
+figure.floatleft {
+    margin-left: 40px;
+}
+figure.floatright {
+    margin-right: 10px;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}

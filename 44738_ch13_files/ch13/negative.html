@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Styling Elements Based on Negative Factors</title>
+<style>
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: 50px;
+}
+h1 {
+    color: #063;
+}
+table {
+    border-collapse: collapse;
+}
+caption {
+    font-variant: small-caps;
+    padding: 10px;
+}
+th {
+    background-color: #757558;
+    color: #FFFBA1;
+    border-bottom: 1px solid #757558;
+    border-right: 1px solid #757558;
+    width: 15%;
+}
+th:first-child {
+    width: 25%;
+}
+th, td {
+    padding: 3px 10px;
+}
+td {
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    background-color: #FFFDCE;
+    text-align: right;
+}
+tr:not(:first-child) > th {
+    text-align: left;
+}
+td:empty {
+    background-color: #D8F2D7;
+}
+</style>
+</head>
+
+<body>
+<table>
+    <caption>
+    Sales Figures 2012
+    </caption>
+    <tr>
+        <th>Salesperson</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <th>Jim Black</th>
+        <td>250,000</td>
+        <td>300,000</td>
+        <td></td>
+        <td></td>
+        <td>550,000</td>
+    </tr>
+    <tr>
+        <th>Jane Brown</th>
+        <td>225,000</td>
+        <td>275,000</td>
+        <td></td>
+        <td></td>
+        <td>500,000</td>
+    </tr>
+    <tr>
+        <th>George Green</th>
+        <td>300,000</td>
+        <td>275,000</td>
+        <td></td>
+        <td></td>
+        <td>575,000</td>
+    </tr>
+    <tr>
+        <th>Amanda White</th>
+        <td>325,000</td>
+        <td>300,000</td>
+        <td></td>
+        <td></td>
+        <td>625,000</td>
+    </tr>
+</table>
+</body>
+</html>

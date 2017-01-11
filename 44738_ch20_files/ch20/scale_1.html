@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Horizontal and Vertical Scaling</title>
+<style>
+/* Browser-specific properties */
+h1 {
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    -webkit-transform-origin: left;
+}
+#horizontal {
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    -o-transform: scaleX(.5);
+    -webkit-transform: scaleX(.5);
+}
+#vertical {
+    -moz-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    -o-transform: scaleY(.5);
+    -webkit-transform: scaleY(.5);
+}
+/* Standard properties */
+h1 {
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:48px;
+    margin: 5px;
+    transform-origin: left;
+}
+#horizontal {
+    transform: scaleX(.5);
+}
+#vertical {
+    transform: scaleY(.5);
+}
+</style>
+</head>
+
+<body>
+<h1>Beginning CSS3</h1>
+<h1 id="horizontal">Beginning CSS3</h1>
+<h1 id="vertical">Beginning CSS3</h1>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#main {
+    width: 65%;
+    margin-left: 35%;
+}
+#aside {
+    float: left;
+    width: 32%;
+}
+p {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+h1 {
+    text-align: center;
+}
+h2, h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0.25em;
+}
+h3:first-child {
+    margin-top: 0;
+}
+.floatleft {
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+.floatright {
+    float: right;
+    margin: 3px 0 3px 10px;
+}
+.imgcentered {
+    margin: 10px auto;
+    display: block;
+}
+.figure.floatleft {
+    margin-left: 40px;
+    /* Fix IE 6 double-margin bug */
+    display: inline;
+}
+.figure.floatright {
+    margin-right: 10px;
+    /* Fix IE 6 double-margin bug */
+    display: inline;
+}
+.figcaption {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.figure {
+    width: 61.5%
+}
+.figure img {
+    max-width: 100%;
+}
+.portrait {
+    width: 40.9%;
+}

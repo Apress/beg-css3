@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Absolutely Positioned Sidebar</title>
+<style>
+body {
+    background-color: #EAE5CE;
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#wrapper {
+    width: 100%;
+    min-width: 550px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FFF;
+    background-image: url(images/faux_right.jpg);
+    background-position: 67% 0;
+    background-repeat: repeat-y;
+    border-left: #252017 solid 1px;
+    border-right: #252017 solid 1px;
+    position: relative;
+}
+#header {
+    background-color: #74685A;
+}
+#header h1 {
+    margin: 0;
+    padding: 10px;
+    color: #FFF;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#sidebar {
+    width: 29%;
+    padding: 2%;
+    position: absolute;
+    top: 63px;
+    left: 67%;
+}
+#main {
+    width: 63%;
+    padding: 10px 2%;
+}
+#footer {
+    background-color: #252017;
+    color: #DB9924;
+    padding: 10px;
+    clear: both;
+}
+h2, h3 {
+    margin-top: 0;
+}
+</style>
+<!--[if IE 6]>
+
+<style type="text/css">
+#wrapper {
+    width: 1000px;
+}
+</style>
+
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Site Heading</h1>
+    </div>
+    <div id="main">
+        <h2>Main Heading</h2>
+        <p>The balanced scorecard, like the executive dashboard, is an essential tool exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities. Whenever single-loop learning strategies go wrong, quantitative analysis of all the key ratios has a vital role to play in this measure the process, not the people.</p>
+        <p>To focus on improvement, not cost, the vitality of conceptual synergies is of supreme importance the three cs - customers, competition and change - have created a new world for business.</p>
+        <p>The components and priorities for the change program presentation of the process flow should culminate in idea generation, working through a top-down, bottom-up approach. Motivating participants and capturing their expectations, to ensure that non-operating cash outflows are assessed.</p>
+    </div>
+    <div id="sidebar">
+        <h3>Sidebar heading</h3>
+        <p>In this layout, the main content comes before the sidebar, but is given a width to leave room for the sidebar on the right. The sidebar is absolutely positioned inside the wrapper div, which is relatively positioned and acts as the sidebar's containing block.</p>
+    </div>
+    <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

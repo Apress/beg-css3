@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Overflowing Sidebar</title>
+<style>
+body {
+    background-color: #EAE5CE;
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#wrapper {
+    width: 100%;
+    min-width: 550px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FFF;
+    background-image: url(images/faux_left.jpg);
+    background-position: 33% 0;
+    background-repeat: repeat-y;
+    border-left: #252017 solid 1px;
+    border-right: #252017 solid 1px;
+    position: relative;
+}
+#header {
+    background-color: #74685A;
+}
+#header h1 {
+    margin: 0;
+    padding: 10px;
+    color: #FFF;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#sidebar {
+    width: 29%;
+    padding: 2%;
+    position: absolute;
+    top: 63px;
+}
+#main {
+    width: 63%;
+    padding: 10px 2%;
+    margin-left: 33%;
+}
+#footer {
+    background-color: #A48F6A;
+    color: #FFFFFF;
+    padding: 10px;
+    clear: both;
+    font-weight: bold;
+}
+h2, h3 {
+    margin-top: 0;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Site Heading</h1>
+    </div>
+    <div id="main">
+        <h2>Main Heading</h2>
+        <p>The balanced scorecard, like the executive dashboard, is an essential tool exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities. Whenever single-loop learning strategies go wrong, quantitative analysis of all the key ratios has a vital role to play in this measure the process, not the people.</p>
+        <p>To focus on improvement, not cost, the vitality of conceptual synergies is of supreme importance the three cs - customers, competition and change - have created a new world for business.    </p>
+    </div>
+    <div id="sidebar">
+        <h3>Sidebar heading</h3>
+        <p>In this layout, the sidebar is absolutely positioned inside the wrapper, but is longer than the main content. Because there's no interaction with positioned elements, the sidebar spills over the footer.</p>
+        <p>The components and priorities for the change program presentation of the process flow should culminate in idea generation, working through a top-down, bottom-up approach. Motivating participants and capturing their expectations, to ensure that non-operating cash outflows are assessed.</p>
+    </div>
+    <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

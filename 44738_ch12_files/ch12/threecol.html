@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Three Columns</title>
+<style>
+body {
+    background-color: #EAE5CE;
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#wrapper {
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFF;
+    background-image: url(images/threecol_right.png);
+    background-position: 75% top;
+    background-repeat: repeat-y;
+    border-left: #252017 solid 1px;
+    border-right: #252017 solid 1px;
+}
+#header {
+    background-color: #74685A;
+}
+#header h1 {
+    margin: 0;
+    padding: 10px 20px;
+    color: #FFF;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#inner {
+    width: 75%;
+    float: left;
+    background-image: url(images/faux_left.jpg);
+    background-repeat: repeat-y;
+    background-position: 33.35% top;
+}
+#sidebar1 {
+    width: 30.66%;
+    padding: 10px 1.33%;
+    float: left;
+}
+#sidebar2 {
+    width: 23%;
+    padding: 10px 1%;
+    float: right;
+}
+#main {
+    width: 62.68%;
+    padding: 10px 2%;
+    float: right;
+}
+#footer {
+    background-color: #252017;
+    color: #DB9924;
+    padding: 10px;
+    clear: both;
+}
+h2, h3 {
+    margin-top: 0;
+}
+</style>
+
+<!--[if IE 6]>
+
+<style type="text/css">
+#wrapper {
+    width: 1200px;
+}
+</style>
+
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Site Heading</h1>
+    </div>
+    <div id="inner">
+        <div id="main">
+            <h2>Main Heading</h2>
+            <p>Both sidebars come after the main content. The main content is floated right inside the inner wrapper, and the inner wrapper is floated left.</p>
+            <p>The balanced scorecard, like the executive dashboard, is an essential tool exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities. Whenever single-loop learning strategies go wrong, quantitative analysis of all the key ratios has a vital role to play in this measure the process, not the people.</p>
+            <p>To focus on improvement, not cost, the vitality of conceptual synergies is of supreme importance the three cs - customers, competition and change - have created a new world for business. </p>
+        </div>
+        <div id="sidebar1">
+            <h3>Sidebar heading</h3>
+            <p>This side bar is floated left inside the inner wrapper.</p>
+        </div>
+    </div>
+    <div id="sidebar2">
+        <h3>Sidebar heading</h3>
+        <p>This sidebar is floated right.</p>
+    </div>
+     <!-- Uncomment this div to fix a bug in IE 6  
+    <div style="clear: both"></div>
+    -->
+    <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

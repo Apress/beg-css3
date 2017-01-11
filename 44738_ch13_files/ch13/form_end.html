@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form State Pseudo-classes</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="url"] {
+    width: 200px;
+}
+input[type="number"] {
+    width: 80px;
+}
+input:valid {
+    background-color: rgba(188, 237, 180, 0.5);
+}
+input[type="url"]:optional {
+    background-color: transparent;
+}
+input:invalid, input:optional:invalid {
+    background-color: rgba(252, 231, 239, 0.5);
+}
+input:default {
+    background-color: #167F39;
+    color: #FFF;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<h1>Order Now</h1>
+<form name="form1" method="post">
+    <p>
+        <label for="name">Name:</label>
+        <input name="name" type="text" required id="name">
+    </p>
+    <p>
+        <label for="email">Email:</label>
+        <input name="email" type="email" required id="email">
+    </p>
+    <p>
+        <label for="website">Your website:</label>
+        <input type="url" name="website" id="website">
+    </p>
+    <p>
+        <label for="num_shirts">Number required:</label>
+        <input name="num_shirts" type="number" required id="num_shirts">
+    </p>
+    <p>
+        <input type="submit" name="order" id="order" value="Submit Order">
+        <input type="reset" name="cancel" id="cancel" value="Clear Form">
+    </p>
+</form>
+</body>
+</html>

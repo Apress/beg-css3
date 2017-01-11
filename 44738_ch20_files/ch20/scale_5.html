@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flipping Elements with scale()</title>
+<style>
+div {
+    background-color: #903;
+    color: #FFF;
+    font-size: 24px;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    width: 120px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+}
+/* Browser-specific properties */
+#horizontal {
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+#vertical {
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+}
+#shrinkflip {
+    -moz-transform: scale(-.5,-.5);
+    -ms-transform: scale(-.5,-.5);
+    -o-transform: scale(-.5,-.5);
+    -webkit-transform: scale(-.5,-.5);
+}
+/* Standard property */
+#horizontal {
+    transform: scaleX(-1);
+}
+#vertical {
+    transform: scaleY(-1);
+}
+#shrinkflip {
+    transform: scale(-.5,-.5);
+}
+</style>
+</head>
+
+<body>
+<div>Flip me!</div>
+<div id="horizontal">Flip me!</div>
+<div id="vertical">Flip me!</div>
+<div id="shrinkflip">Flip me!</div>
+</body>
+</html>

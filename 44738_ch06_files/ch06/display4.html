@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hiding Content</title>
+<style>
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+}
+h1, p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#details {
+    margin-left: 50px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+<h1>Showing and Hiding</h1>
+<p id="intro">One of the most common uses of the <code>display</code> property is to show and hide content using JavaScript. </p>
+<p id="details">However, it's important to hide content only when JavaScript is enabled in the browser.</p>
+<p>The page is reflowed when an element's <code>display</code> property is set to <code>none</code> or <code>block</code>.</p>
+<div></div>
+<script>
+(function () {
+	// Get references to page elements and create a link dynamically
+	var intro = document.getElementById('intro'),
+		dets = document.getElementById('details'),
+		a = document.createElement('a'),
+		toggle;
+	// Add the show class to the details paragraph
+	dets.className = 'show';
+	// Give the link an ID and text, then add it to the intro paragraph
+	a.id = 'toggle';
+	a.href = '#';
+	a.appendChild(document.createTextNode('Hide details'));
+	intro.appendChild(a);
+	// Function to swap the class name and link text when clicked
+	function showHide(e) {
+		// Normalize the event for IE 8 and older
+		e = event || window.event;
+		if (dets.className === 'show') {
+			dets.className = 'hide';
+			toggle.innerHTML = 'View details';
+		} else {
+			dets.className = 'show';
+			toggle.innerHTML = 'Hide details';
+		}
+		// Stop the link from being followed
+		if (e.preventDefault) {
+		    e.preventDefault();
+		} else {
+			return false;
+		}
+	}
+	// Get a reference to the link and bind the showHide function to it
+	toggle = document.getElementById('toggle');
+	if (toggle.addEventListener) {
+		// modern browsers
+	    toggle.addEventListener('click', showHide, false);
+	} else if (toggle.attachEvent) {
+		// IE 8 and earlier
+		toggle.attachEvent('onclick', showHide);
+	}
+}());
+</script>
+</body>
+</html>

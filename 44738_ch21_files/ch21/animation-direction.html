@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Controlling Animation Direction</title>
+<link href="styles/animation-direction.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<label>Normal
+<button data-name="normal">&#x25B6;</button></label>
+<div id="normal"></div>
+<label>Reverse
+<button data-name="rev">&#x25B6;</button></label>
+<div id="rev"></div>
+<label>Alternate
+<button data-name="alternate">&#x25B6;</button></label>
+<div id="alternate"></div>
+<label>Alternate-reverse
+<button data-name="altrev">&#x25B6;</button></label>
+<div id="altrev"></div>
+<script>
+var buttons = document.getElementsByTagName('button'),
+    boxes = [];
+boxes['normal'] = document.getElementById('normal');
+boxes['rev'] = document.getElementById('rev');
+boxes['alternate'] = document.getElementById('alternate');
+boxes['altrev'] = document.getElementById('altrev');
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', (function(num) {
+        return function(e) {
+            toggleAnimation(e);
+        }
+    })(i), false);
+}
+function toggleAnimation(e) {
+    var name = e.target.getAttribute('data-name');
+    boxes[name].classList.toggle('animated');
+    if (boxes[name].classList.contains('animated')) {
+        e.target.innerHTML = '&#x25A0;';
+    } else {
+        e.target.innerHTML = '&#x25B6;';
+    }
+}
+</script>
+</body>
+</html>

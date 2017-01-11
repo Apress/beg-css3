@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Automatically Numbering Headings</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    counter-reset: chapter 15;
+}
+#wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+h3, p {
+    margin-left: 40px;
+}
+h1::before {
+    content: 'Chapter ' counter(chapter) ': ';
+}
+h1 {
+    counter-reset: section;
+}
+h2 {
+    counter-reset: subsection;
+}
+h2::before {
+    counter-increment: section;
+    content: counter(chapter) '.' counter(section, lower-roman) ' ';
+}
+h3::before {
+    counter-increment: subsection;
+    content: counter(chapter) '.' counter(section, lower-roman) '.' counter(subsection, lower-alpha) ' ';
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Generated Content    </h1>
+    <h2>Inserting Generated Content</h2>
+    <p>What CSS means by <i>generated content</i> is. . .</p>
+    <h2>Defining the Content to be Inserted</h2>
+    <p>The <code>content</code> property is extremely versatile. . . .    </p>
+    <h2>Inserting Images and Text</h2>
+    <h2>Generating Quotes Automatically</h2>
+    <h3>Standardizing Quotes on &lt;q&gt; Elements</h3>
+    <h3>Generating Quotes for Other Elements</h3>
+    <h2>Generating Numbered Sequences</h2>
+    <h3>Using Separate Counters</h3>
+    <h3>Changing the Number Style</h3>
+</div>
+</body>
+</html>

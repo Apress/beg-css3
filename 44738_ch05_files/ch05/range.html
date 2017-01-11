@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Limited Character Range</title>
+<style>
+@font-face {
+    font-family: 'Limelight Quotes';
+     src: url('styles/fonts/Limelight-webfont.eot');
+     src: url('styles/fonts/Limelight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/fonts/Limelight-webfont.woff') format('woff'),
+         url('styles/fonts/Limelight-webfont.ttf') format('truetype'),
+         url('styles/fonts/Limelight-webfont.svg#LimelightRegular') format('svg');
+    unicode-range: U+201c-d;
+}
+@font-face {
+    font-family: 'Limelight Quotes';
+    src: local(Georgia);
+    unicode-range: U+270C;
+}
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.quote {
+    font-family: 'Limelight Quotes', serif;
+    font-size: 150%;
+}
+.song {
+    white-space: pre-wrap;
+}
+</style>
+</head>
+
+<body>
+<h1><span class="quote">&#8220;</span>Turtle Soup<span class="quote">&#8221;</span></h1>
+<p class="song">    Beautiful Soup, so rich and green,
+    Waiting in a hot tureen!
+    Who for such dainties would not stoop?
+    Soup of the evening, beautiful Soup!</p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stepping Function</title>
+<style>
+/* Browser-specific properties */
+div {
+    -moz-transition-duration: 5s;
+    -o-transition-duration: 5s;
+    -webkit-transition-duration: 5s;
+}
+#steps1 {
+    -moz-transition-timing-function: steps(5, start);
+    -o-transition-timing-function: steps(5, start);
+    -webkit-transition-timing-function: steps(5, start);
+}
+#steps2 {
+    -moz-transition-timing-function: steps(5, end);
+    -o-transition-timing-function: steps(5, end);
+    -webkit-transition-timing-function: steps(5, end);
+}
+#steps3 {
+    -moz-transition-timing-function: step-start;
+    -o-transition-timing-function: step-start;
+    -webkit-transition-timing-function: step-start;
+}
+#steps4 {
+    -moz-transition-timing-function: step-end;
+    -o-transition-timing-function: step-end;
+    -webkit-transition-timing-function: step-end;
+}
+/* Standard properties */
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    background-color: #CCC;
+    transition-duration: 5s;
+}
+#steps1 {
+    transition-timing-function: steps(5, start);
+}
+#steps2 {
+    transition-timing-function: steps(5, end);
+}
+#steps3 {
+    transition-timing-function: step-start;
+}
+#steps4 {
+    transition-timing-function: step-end;
+}
+div:hover {
+    background-color: #333;
+}
+</style>
+</head>
+
+<body>
+<div id="steps1"></div>
+<div id="steps2"></div>
+<div id="steps3"></div>
+<div id="steps4"></div>
+</body>
+</html>

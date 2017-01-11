@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alignment Items Along the Cross Axis</title>
+<style>
+div {
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #000;
+    width: 440px;
+    margin: 10px;
+}
+#flex-start {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#flex-end {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+#center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+#baseline {
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+p {
+    margin: 0;
+    padding: 5px;
+    width: 100px;
+    background-color: #CCC;
+    border: 1px solid #999;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+#baseline p:nth-child(2) {
+    font-size: 20px;
+}
+#baseline p:nth-child(3) {
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+<div id="flex-start">
+    <p>Alice in Wonderland</p>
+    <p>A White Rabbit with pink eyes ran  close by.</p>
+    <p>Oh dear! Oh dear! I shall be late!</p>
+    <p>Down went Alice after it, never once considering how in the world she was to get out again. </p>
+</div>
+<div id="flex-end">
+    <p>Alice in Wonderland</p>
+    <p>A White Rabbit with pink eyes ran  close by.</p>
+    <p>Oh dear! Oh dear! I shall be late!</p>
+    <p>Down went Alice after it, never once considering how in the world she was to get out again. </p>
+</div>
+<div id="center">
+    <p>Alice in Wonderland</p>
+    <p>A White Rabbit with pink eyes ran  close by.</p>
+    <p>Oh dear! Oh dear! I shall be late!</p>
+    <p>Down went Alice after it, never once considering how in the world she was to get out again. </p>
+</div>
+<div id="baseline">
+    <p>Alice in Wonderland</p>
+    <p>A White Rabbit with pink eyes ran  close by.</p>
+    <p>Oh dear! Oh dear! I shall be late!</p>
+    <p>Down went Alice after it, never once considering how in the world she was to get out again. </p>
+</div>
+<div id="stretch">
+    <p>Alice in Wonderland</p>
+    <p>A White Rabbit with pink eyes ran  close by.</p>
+    <p>Oh dear! Oh dear! I shall be late!</p>
+    <p>Down went Alice after it, never once considering how in the world she was to get out again. </p>
+</div>
+</body>
+</html>

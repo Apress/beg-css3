@@ -1,0 +1,16 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#books {
+    background-color: #CCC;
+    padding: 5px;
+}
+article {
+    background-color: #FFF;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+}

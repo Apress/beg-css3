@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using nth-child() to Style Rows</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+small {
+    font-size: 12px;
+    font-style: italic;
+}
+caption {
+    font-variant: small-caps;
+    padding: 0.5em 0;
+}
+table {
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+th, td {
+    padding: 5px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+td {
+    color: #2C2C2C;
+}
+th {
+    color: #FFF;
+    background-color: #514F33;
+    width: 16%;
+}
+th:first-child {
+    width: 20%;
+}
+tr:nth-child(3n+2) {
+    background-color: #DED68B; /*light */
+}
+tr:nth-child(3n+3) {
+    background-color: #B7B173; /* medium */
+}
+tr:nth-child(3n+1) {
+    background-color: #918C5B; /* dark */
+}
+</style>
+</head>
+
+<body>
+<table>
+    <caption>
+    Male Life Expectancy at Birth in the UK
+    </caption>
+    <tr>
+        <th>Year</th>
+        <th>Average</th>
+        <th>England</th>
+        <th>Wales</th>
+        <th>Scotland</th>
+        <th>N Ireland</th>
+    </tr>
+    <tr>
+        <th>2000-2002</th>
+        <td>75.66</td>
+        <td>76.00</td>
+        <td>75.31</td>
+        <td>73.34</td>
+        <td>75.24</td>
+    </tr>
+    <tr>
+        <th>2001-2003</th>
+        <td>75.88</td>
+        <td>76.23</td>
+        <td>75.49</td>
+        <td>73.51</td>
+        <td>75.59</td>
+    </tr>
+    <tr>
+        <th>2002-2004</th>
+        <td>76.18</td>
+        <td>76.53</td>
+        <td>75.79</td>
+        <td>73.79</td>
+        <td>75.88</td>
+    </tr>
+    <tr>
+        <th>2003-2005</th>
+        <td>76.55</td>
+        <td>76.90</td>
+        <td>76.13</td>
+        <td>74.24</td>
+        <td>76.10</td>
+    </tr>
+    <tr>
+        <th>2004-2006</th>
+        <td>76.96</td>
+        <td>77.31</td>
+        <td>76.63</td>
+        <td>74.64</td>
+        <td>76.17</td>
+    </tr>
+    <tr>
+        <th>2005-2007</th>
+        <td>77.27</td>
+        <td>77.65</td>
+        <td>76.77</td>
+        <td>74.85</td>
+        <td>76.25</td>
+    </tr>
+    <tr>
+        <th>2006-2008</th>
+        <td>77.53</td>
+        <td>77.93</td>
+        <td>76.97</td>
+        <td>75.04</td>
+        <td>76.42</td>
+    </tr>
+    <tr>
+        <th>2007-2009</th>
+        <td>77.85</td>
+        <td>78.25</td>
+        <td>77.17</td>
+        <td>75.39</td>
+        <td>76.77</td>
+    </tr>
+    <tr>
+        <th>2008-2010</th>
+        <td>78.20</td>
+        <td>78.58</td>
+        <td>77.62</td>
+        <td>75.85</td>
+        <td>77.07</td>
+    </tr>
+</table>
+<p><small>Adapted from data from the UK Office for National Statistics licensed under the Open Government Licence v.1.0.</small></p>
+</body>
+</html>

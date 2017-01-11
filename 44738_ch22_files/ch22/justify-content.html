@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alignment Along the Main Axis</title>
+<style>
+div {
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #000;
+    width: 500px;
+    margin: 10px;
+}
+#flex-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+#center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#space-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#space-around {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+p {
+    margin: 0;
+    padding: 5px;
+    background-color: #CCC;
+    border: 1px solid #999;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+</head>
+
+<body>
+<div id="flex-start">
+    <p>Item 1</p>
+    <p>This is item 2</p>
+    <p>Flex item 3</p>
+</div>
+<div id="flex-end">
+    <p>Item 1</p>
+    <p>This is item 2</p>
+    <p>Flex item 3</p>
+</div>
+<div id="center">
+    <p>Item 1</p>
+    <p>This is item 2</p>
+    <p>Flex item 3</p>
+</div>
+<div id="space-between">
+    <p>Item 1</p>
+    <p>This is item 2</p>
+    <p>Flex item 3</p>
+</div>
+<div id="space-around">
+    <p>Item 1</p>
+    <p>This is item 2</p>
+    <p>Flex item 3</p>
+</div>
+</body>
+</html>

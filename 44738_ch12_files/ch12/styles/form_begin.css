@@ -1,0 +1,12 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #FFF;
+}
+form {
+    margin-left: 60px;
+}
+textarea {
+    height: 100px;
+    width: 300px;
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'AurulentSans Regular';
+    src: url('fonts/AurulentSans-Regular-webfont.eot');
+    src: url('fonts/AurulentSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),  
+url('fonts/AurulentSans-Regular-webfont.woff') format('woff'),
+url('fonts/AurulentSans-Regular-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-Regular-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'AurulentSans Bold';
+    src: url('fonts/AurulentSans-Bold-webfont.eot');
+    src: url('fonts/AurulentSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/AurulentSans-Bold-webfont.woff') format('woff'),
+url('fonts/AurulentSans-Bold-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-Bold-webfont.svg') format('svg');
+}
+body {
+    font-family: 'AurulentSans Regular', sans-serif;
+}
+.bold {
+    font-family: 'AurulentSans Bold', sans-serif;
+}

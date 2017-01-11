@@ -1,0 +1,173 @@
+@-moz-keyframes glow {
+    from {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 5px #F80,
+                 10px 0 5px #F80;
+    }
+    50% {
+        text-shadow: 0 0 11px #F80;
+        
+    }
+    to {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 11px #F80,
+                 10px 0 11px #F80;
+    }
+
+}
+@-o-keyframes glow {
+    from {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 5px #F80,
+                 10px 0 5px #F80;
+    }
+    50% {
+        text-shadow: 0 0 11px #F80;
+        
+    }
+    to {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 11px #F80,
+                 10px 0 11px #F80;
+    }
+
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 5px #F80,
+                 10px 0 5px #F80;
+    }
+    50% {
+        text-shadow: 0 0 11px #F80;
+        
+    }
+    to {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 11px #F80,
+                 10px 0 11px #F80;
+    }
+
+}
+@-moz-keyframes twirl {
+    from {
+        -moz-transform: translate(0, 0) scale(1) rotate(0turn);
+    }
+    50% {
+        -moz-transform: translate(300px, 100px) scale(2,.5) rotate(4turn);
+    }
+    to {
+        -moz-transform: translate(600px, 0)scale(1) rotate(-4turn);
+    }
+}
+@-o-keyframes twirl {
+    from {
+        -o-transform: translate(0, 0) scale(1) rotate(0turn);
+    }
+    50% {
+        -o-transform: translate(300px, 100px) scale(2,.5) rotate(4turn);
+    }
+    to {
+        -o-transform: translate(600px, 0)scale(1) rotate(-4turn);
+    }
+}
+@-webkit-keyframes twirl {
+    from {
+        -webkit-transform: translate(0, 0) scale(1) rotate(0turn);
+    }
+    50% {
+        -webkit-transform: translate(300px, 100px) scale(2,.5) rotate(4turn);
+    }
+    to {
+        -webkit-transform: translate(600px, 0)scale(1) rotate(-4turn);
+    }
+}
+h1 {
+    -moz-animation-name: glow;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: glow;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-name: glow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+#square {
+    -moz-animation-name: twirl;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -o-animation-name: twirl;
+    -o-animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -webkit-animation-name: twirl;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+.paused {
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+/* Standard syntax */
+@keyframes glow {
+    from {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 5px #F80,
+                 10px 0 5px #F80;
+    }
+    50% {
+        text-shadow: 0 0 11px #F80;
+        
+    }
+    to {
+        text-shadow: -10px -15px 11px #F80,
+                 -10px 15px 11px #F80,
+                 -10px 0 11px #F80,
+                 10px 0 11px #F80;
+    }
+
+}
+@keyframes twirl {
+    from {
+        transform: translate(0, 0) scale(1) rotate(0turn);
+    }
+    50% {
+        transform: translate(300px, 100px) scale(2,.5) rotate(4turn);
+    }
+    to {
+        transform: translate(600px, 0)scale(1) rotate(-4turn);
+    }
+}
+h1 {
+    font-family:"Arial Black", Gadget, sans-serif;
+    color: #900;
+    margin-left: 150px;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#square {
+    width: 0;
+    height: 0;
+    border-color: #060 #F80 #009 #FF0;
+    border-width: 30px;
+    border-style: solid;
+    animation-name: twirl;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.paused {
+    animation-play-state: paused;
+}

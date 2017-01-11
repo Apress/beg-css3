@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using Table Sections</title>
+<style type="text/css">
+body {
+    color: #000;
+    background-color: #FFF;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 350px;
+    margin: 20px auto;
+}
+thead, tfoot {
+    background-color: #A49B33;
+}
+th {
+    padding: 5px;
+}
+td {
+    padding: 2px 2px 2px 15px;
+}
+td:last-child {
+    text-align: center;
+}
+#q1 {
+    background-color: #D6CF7A;
+    border-bottom: 2px solid #000;
+}
+#q2 {
+    background-color: #EFECCA;
+}
+</style>
+</head>
+
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Period</th>
+            <th>Results</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Period</th>
+            <th>Results</th>
+            <th>Amount</th>
+        </tr>
+    </tfoot>
+    <tbody id="q1">
+        <tr>
+            <td>Q1</td>
+            <td>Sales</td>
+            <td>$4.5m</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Expenditure</td>
+            <td>$4.1m</td>
+        </tr>
+    </tbody>
+    <tbody id="q2">
+        <tr>
+            <td>Q2</td>
+            <td>Sales</td>
+            <td>$4.9m</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Expenditure</td>
+            <td>$4.7m</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

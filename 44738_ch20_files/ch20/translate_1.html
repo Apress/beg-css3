@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Moving an Element Horizontally</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+}
+img {
+    margin: 10px;
+}
+/* Browser-specific properties */
+img:last-child {
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+}
+/* Standard property */
+img:last-child {
+    transform: translateX(-25%);
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="images"><img src="images/nice_market.jpg" width="400" height="266" alt="Flower market in Nice"><img src="images/nice_seafront.jpg" width="400" height="266" alt="Nice seafront"></div>
+    <p>Nice is a jewel of the Côte d&rsquo;Azur in Southern France.  Surrounded by mountains, its crescent-shaped bay faces the Mediterranean,  blessing it with a mild winter climate. Even when the mountains are covered in  snow, the town normally remains snow-free.</p>
+</div>
+</body>
+</html>

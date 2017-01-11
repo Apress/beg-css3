@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Overflow with Image</title>
+<style type="text/css">
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+#box1, #box2, #box3, #box4, #box5 {
+    height: 200px;
+    width: 150px;
+    border: 2px solid #F00;
+    margin: 10px;
+    float: left;
+}
+#box1, #box2 {
+    overflow: auto;
+}
+#box3 {
+    overflow: hidden;
+}
+#box4 {
+    overflow: scroll;
+}
+#box5 {
+    overflow: visible;
+}
+</style>
+</head>
+
+<body>
+<div id="box1">This box has its <code>overflow</code> property set to <code>auto</code>. <img src="images/flower1.png" width="80" height="61" alt="Flower"></div>
+<div id="box2">This box has its <code>overflow</code> property set to <code>auto</code>. <img src="images/lasvegas.jpg" width="600" height="374" alt="Las Vegas"></div>
+<div id="box3">This box has its <code>overflow</code> property set to <code>hidden</code>. <img src="images/lasvegas.jpg" width="600" height="374" alt="Las Vegas"></div>
+<div id="box4"> This box has its <code>overflow</code> property set to <code>scroll</code>.<img src="images/lasvegas.jpg" width="600" height="374" alt="Las Vegas"></div>
+<div id="box5">This box has its <code>overflow</code> property set to <code>visible</code>. <img src="images/lasvegas.jpg" width="600" height="374" alt="Las Vegas"></div>
+</body>
+</html>

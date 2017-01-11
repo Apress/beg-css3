@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stacking Context</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#verse1, #verse2 {
+    position: relative;
+    padding: 20px;
+    border: 2px black solid;
+    width: 280px;
+}
+#verse1 {
+    top: 20px;
+    left: 30px;
+    background-color: #FF6;
+    z-index: 2;
+}
+#verse2 {
+    top: -10px;
+    left: 200px;
+    background-color: #6CF;
+    z-index: 1;
+}
+#verse1 p, #verse2 p {
+    white-space: pre;
+}
+#destination {
+    position: absolute;
+    left: 340px;
+    top: 0;
+    z-index: 5;
+}
+#flower {
+    position: absolute;
+    left: 200px;
+    top: -55px;
+    z-index: 2000;
+}
+</style>
+</head>
+
+<body>
+<div id="verse1">
+    <p>How doth the little crocodile
+Improve his shining tail,
+And pour the waters of the Nile 
+On every golden scale!</p>
+    <div id="destination"><img src="images/destination.png" width="150" height="118" alt="Great destination">
+    </div>
+</div>
+<div id="verse2">
+    <p>How cheerfully he seems to grin,
+How neatly spread his claws,
+And welcome little fishes in
+With gently smiling jaws!</p>
+    <div id="flower"><img src="images/flower2.png" width="80" height="60" alt="Flower">
+    </div>
+</div>
+</body>
+</html>

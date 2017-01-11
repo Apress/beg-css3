@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multiple Text Shadows</title>
+<style>
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #FFF;
+}
+h1 {
+	font-size: 36px;
+}
+#mustard {
+	background-color: #FFD54E;
+	color: #CCAA3F;
+	width: 200px;
+	text-align: center;
+	padding: 10px 0;
+	float: left;
+}
+#teal {
+	color: teal;
+	float: left;
+	margin-left: 20px;
+}
+.raised {
+	text-shadow: -1px -1px #FFE79B, 1px 1px #7F744D;
+}
+.inset {
+	text-shadow: -1px -1px #7F744D, 1px 1px #FFE79B;
+}
+.outline {
+	margin-top: 0;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.glow {
+	text-shadow: 0 0 0.4em #6F9;
+}
+.intense-glow {
+	text-shadow: 0 0 0.4em #6F9, 0 0 0.4em #6F9, 0 0 0.4em #6F9;
+}
+</style>
+</head>
+
+<body>
+<div id="mustard">
+    <h1 class="raised">Raised</h1>
+    <h1 class="inset">Inset</h1>
+</div>
+<div id="teal">
+<h1 class="outline">Text Outline</h1>
+<h1 class="glow">Glow</h1>
+<h1 class="intense-glow">Intense Glow</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    background-color: #FFF;
+    font-family:"Arial Black", Gadget, sans-serif;
+}
+/* Browser-specific syntax */
+@-moz-keyframes bounce {
+    from {
+        -moz-transform: translateY(-3.5em);
+    }
+    60% {
+        -moz-transform: translateY(0);
+        -moz-animation-timing-function: ease-in;
+    }
+    70% {
+        -moz-transform: translateY(-.2em);
+    }
+    80% {
+        -moz-transform: translateY(0);
+        -moz-animation-timing-function: ease-in;
+    }
+    90% {
+        -moz-transform: translateY(-.1em);
+    }
+    to {
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes bounce {
+    from {
+        -o-transform: translateY(-3.5em);
+    }
+    60% {
+        -o-transform: translateY(0);
+        -o-animation-timing-function: ease-in;
+    }
+    70% {
+        -o-transform: translateY(-.2em);
+    }
+    80% {
+        -o-transform: translateY(0);
+        -o-animation-timing-function: ease-in;
+    }
+    90% {
+        -o-transform: translateY(-.1em);
+    }
+    to {
+        -o-transform: translateY(0);
+    }
+}
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translateY(-3.5em);
+    }
+    60% {
+        -webkit-transform: translateY(0);
+        -webkit-animation-timing-function: ease-in;
+    }
+    70% {
+        -webkit-transform: translateY(-.2em);
+    }
+    80% {
+        -webkit-transform: translateY(0);
+        -webkit-animation-timing-function: ease-in;
+    }
+    90% {
+        -webkit-transform: translateY(-.1em);
+    }
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+h1 {
+    -moz-animation: bounce 2s ease-out;
+    -o-animation: bounce 2s ease-out;
+    -webkit-animation: bounce 2s ease-out;
+}
+
+/* Standard syntax */
+@keyframes bounce {
+    from {
+        transform: translateY(-3.5em);
+    }
+    60% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    70% {
+        transform: translateY(-.2em);
+    }
+    80% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(-.1em);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+h1 {
+    color: #900;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    animation: bounce 2s ease-out;
+}

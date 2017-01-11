@@ -1,0 +1,41 @@
+#main {
+    width: 64%;
+    margin: 15px 1% 10px 35%;
+}
+#aside {
+    float: left;
+    width: 31%;
+    display: inline;
+    background-color: #FFF;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+}
+.imgcentered {
+    margin: 10px auto;
+    display: block;
+}
+.figure.floatleft {
+    margin: 3px 10px 3px 40px;
+    float: left;
+}
+.figure.floatright {
+    margin: 3px 10px;
+    float: right;
+}
+.figure {
+    width: 61.5%
+}
+.portrait {
+    width: 40.9%;
+}
+#nav {
+    height: 40px;
+}
+#nav li {
+    width: 15.5%;
+    margin-left: 1%;
+}
+#nav li a {
+    padding: 0.5em 5px;
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Nobile;
+    src: url('fonts/nobile-webfont.eot');
+    src: url('fonts/nobile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nobile-webfont.woff') format('woff'),
+         url('fonts/nobile-webfont.ttf') format('truetype'),
+         url('fonts/nobile-webfont.svg#NobileRegular') format('svg');
+}
+
+@font-face {
+    font-family: Nobile;
+    src: url('fonts/nobile_italic-webfont.eot');
+    src: url('fonts/nobile_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nobile_italic-webfont.woff') format('woff'),
+         url('fonts/nobile_italic-webfont.ttf') format('truetype'),
+         url('fonts/nobile_italic-webfont.svg#NobileItalic') format('svg');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nobile;
+    src: url('fonts/nobile_bold-webfont.eot');
+    src: url('fonts/nobile_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nobile_bold-webfont.woff') format('woff'),
+         url('fonts/nobile_bold-webfont.ttf') format('truetype'),
+         url('fonts/nobile_bold-webfont.svg#NobileBold') format('svg');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nobile;
+    src: url('fonts/nobile_bold_italic-webfont.eot');
+    src: url('fonts/nobile_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nobile_bold_italic-webfont.woff') format('woff'),
+         url('fonts/nobile_bold_italic-webfont.ttf') format('truetype'),
+         url('fonts/nobile_bold_italic-webfont.svg#NobileBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}

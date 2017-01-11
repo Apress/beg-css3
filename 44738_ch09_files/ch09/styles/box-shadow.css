@@ -1,0 +1,51 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+div {
+    float: left;
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    background-color: #900;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 20px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#inset1, #inset2 {
+    background-color: #F2F162;
+    color: #000;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+}
+#inset1, #spread1 {
+    clear: left;
+}
+#drop1 {
+    -webkit-box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+}
+#drop2 {
+    -webkit-box-shadow: -5px -5px 7px rgba(0,0,0,0.3);
+    box-shadow: -5px -5px 7px rgba(0,0,0,0.3);
+}
+#inset1 {
+    -webkit-box-shadow: inset 10px 10px 10px rgba(0,0,0,0.3);
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.3);
+}
+#inset2 {
+    -webkit-box-shadow: inset -10px -10px 10px rgba(0,0,0,0.3);
+    box-shadow: inset -10px -10px 10px rgba(0,0,0,0.3);
+}
+#spread1 {
+    -webkit-box-shadow: 5px 5px 7px 4px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 7px 4px rgba(0,0,0,0.3);
+}
+#spread2 {
+    -webkit-box-shadow: 5px 5px 7px 12px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 7px 12px rgba(0,0,0,0.3);
+}

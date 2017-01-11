@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Masking with clip</title>
+<style type="text/css">
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 550px;
+}
+#clipped {
+    height: 375px;
+    width: 500px;
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    clip: rect(60px 290px 135px 210px);
+    cursor: pointer;
+    -moz-transition: ease-out 1s;
+    -ms-transition: ease-out 1s;
+    -o-transition: ease-out 1s;
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+}
+#clipped:active {
+    clip: rect(0 500px 375px 0);
+}
+</style>
+</head>
+
+<body>
+<div id="clipped"><img src="images/alcatraz.jpg" width="500" height="375" alt="Mystery image"></div>
+<h1>Guess Where</h1>
+<p>This is part of a famous landmark in North America. To reveal where it is, click the image, and hold down the mouse button.</p>
+</body>
+</html>

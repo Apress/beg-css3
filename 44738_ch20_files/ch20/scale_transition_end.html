@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Scaling and Rotating Smoothly</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+/* Uncomment this section if you need the browser-specific properties
+.scaleimg {
+    -moz-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+}
+.scaleimg:first-child {
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+}
+.scaleimg:last-child {
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -o-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+}
+.scaleimg:hover {
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+#images + p {
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+}
+*/
+
+/* Standard transform and transition properties */
+.scaleimg {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    transition: ease-in-out 1s;
+    position: relative;
+    z-index: 1;
+}
+.scaleimg:first-child {
+    transform-origin: left top;
+    transform: rotate(-6deg);
+}
+.scaleimg:last-child {
+    transform-origin: right top;
+    transform: rotate(6deg);
+}
+.scaleimg:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+#images + p {
+    transition: 1s ease-in-out;
+}
+#images:hover + p {
+    margin-top: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="images"><img src="images/nice_market.jpg" alt="Flower market in Nice" width="268" height="178" class="scaleimg"><img src="images/nice_seafront.jpg" alt="Nice seafront" width="268" height="178" class="scaleimg"></div>
+<p>Nice is a jewel of the Côte d&rsquo;Azur in Southern France.  Surrounded by mountains, its crescent-shaped bay faces the Mediterranean,  blessing it with a mild winter climate. Even when the mountains are covered in  snow, the town normally remains snow-free.</p>
+</body>
+</html>

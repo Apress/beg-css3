@@ -1,0 +1,43 @@
+body {
+	background-color: #F7F7F7;
+	color: black;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: teal;
+}
+dfn {
+	color: maroon;
+	font-style: italic;
+}
+code {
+	color: gray;
+}
+p {
+	font-size: 14px;
+}
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+a:link {
+	color: #8D0E6B;	
+}
+a:visited {
+	color: #B53392;
+}
+a:hover, a:active, a:focus {
+	color: #63550A;
+	text-decoration: underline;
+}
+#nav a:link, #nav a:visited {
+	color: #63550A;
+}
+#nav a:hover, #nav a:active, #nav a:focus {
+	color: #8D0E6B;
+	text-decoration: none;
+}
+abbr:hover {
+	cursor: help;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flex Layout</title>
+<style>
+body {
+    background-color: #D2E1E6;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0;
+}
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header, footer {
+    text-align: center;
+}
+#main {
+    display: -webkit-flex;
+    display: flex;
+}
+#main > section, #main > nav, #main > aside {
+    margin: 5px;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+#main > section {
+    -webkit-flex: 3 1 0;
+    flex: 3 1 0;
+    min-height: 400px;
+}
+#main > nav {
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
+    -webkit-order: -1;
+    order: -1;
+}
+#main > aside {
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div id="main">
+        <section>
+            <h2>Main Content</h2>
+            <p>This section comes before the navigation in the underlying HTML, but occupies the middle column because the navigation's order property has been set to minus one.</p>
+        </section>
+        <nav>
+            <h3>Navigation</h3>
+        </nav>
+        <aside>
+            <h3>Sidebar</h3>
+        </aside>
+    </div>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</div>
+</body>
+</html>

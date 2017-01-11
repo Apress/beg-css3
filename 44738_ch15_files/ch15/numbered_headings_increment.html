@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Changing Increments</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    counter-reset: chapter 15;
+}
+#wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+h3, p {
+    margin-left: 40px;
+}
+h1::before {
+    content: 'Chapter ' counter(chapter) ': ';
+}
+h1 {
+    counter-reset: section;
+}
+h2 {
+    counter-reset: subsection 7;
+}
+h2::before {
+    counter-increment: section 5;
+    content: counter(chapter) '.' counter(section) ' ';
+}
+h3::before {
+    counter-increment: subsection -3;
+    content: counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Generated Content    </h1>
+    <h2>Incremental Madness</h2>
+    <p>The section numbers increase in steps of 5.</p>
+    <h2>Now We Are 10</h2>
+    <h3>I'm Counting Backwards in Steps of 3</h3>
+    <h3>Back at 1</h3>
+    <h3>Slipping into Negative Territory</h3>
+</div>
+</body>
+</html>

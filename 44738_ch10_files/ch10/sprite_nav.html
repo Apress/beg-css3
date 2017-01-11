@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Sprite Menu</title>
+<style type="text/css">
+body {
+    color: #000;
+    background-color: #FFF;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+#wrapper {
+    width: 880px;
+    margin: 0 auto;
+}
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 2.3em;
+    border-bottom: #5B4625 3px solid;
+}
+#nav li {
+    width: 220px;
+    height: 2.3em;
+    margin: 0;
+    float: left;
+}
+#nav a {
+    display: block;
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 5px 6px 35px;
+    color: #900;
+    background-image: url(images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#nav a:hover, #nav a:active, #nav a:focus  {
+    background-position: left -90px;
+    color: #060;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>CSS Sprites in a Navigation Bar</h1>
+    <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>You can also use CSS sprites with an unordered list. This avoids the need for JavaScript to swap the images on rollover. There's also no need to preload the images for the &quot;over&quot; state because they're part of the original image. All that's necessary is to change  the <code>background-position</code> property of the link in the <code>:hover</code> pseudo-class.</p>
+</div>
+</body>
+</html>

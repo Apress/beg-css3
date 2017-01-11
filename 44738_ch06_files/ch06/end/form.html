@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Styling a Form</title>
+<link href="form.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Share Your Views</h1>
+<form name="form1" method="post" action="">
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+    </p>
+    <p>
+        <label for="email">Email address:</label>
+        <input type="text" name="email" id="email">
+    </p>
+    <fieldset>
+        <legend>How much do you earn?</legend>
+        <p>
+            <label>
+                <input type="radio" name="income" value="< 20K" id="income_0">
+                Under $20,000</label>
+            <br>
+            <label>
+                <input type="radio" name="income" value="20-40K" id="income_1">
+                $20,000 - $40,000</label>
+            <br>
+            <label>
+                <input type="radio" name="income" value="41-60K" id="income_2">
+                $40,000 - $60,000</label>
+            <br>
+            <label>
+                <input type="radio" name="income" value="60K+" id="income_3">
+                Over $60,000</label>
+            <br>
+            <label>
+                <input type="radio" name="income" value="notsay" id="income_4">
+                Rather not say</label>
+        </p>
+    </fieldset>
+    <p>
+        <label for="region">Where do you live?</label>
+        <select name="region" id="region">
+            <option value="0" selected>Choose a region</option>
+            <option>Africa</option>
+            <option>Asia/Pacific</option>
+            <option>Carribean</option>
+            <option>Central/South America</option>
+            <option>Europe</option>
+            <option>North America</option>
+        </select>
+    </p>
+    <p>
+        <label for="ideas">Tell us your ideas</label>
+        <textarea name="ideas" id="ideas"></textarea>
+    </p>
+    <p>
+        <input type="submit" name="send" id="send" value="Send">
+    </p>
+</form>
+</body>
+</html>

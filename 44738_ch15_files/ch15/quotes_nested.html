@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nested Quotation Marks</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+blockquote p {
+    quotes: '\201C' '\201D' '\2018' '\2019';
+}
+blockquote p::before {
+    content: open-quote;
+}
+blockquote p::after {
+    content: no-close-quote;
+}
+blockquote p:last-child::after {
+    content: close-quote;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <p>Some people are forever putting their foot in it, just like Alice did after the Caucus-race during her adventures in Wonderland:</p>
+    <blockquote>
+        <p>Alice replied eagerly, for she was always ready to talk  about her pet: <q>Dinah&rsquo;s our cat. And she&rsquo;s such a capital one for catching mice  you can&rsquo;t think! And oh, I wish you could see her after the birds! Why, she&rsquo;ll  eat a little bird as soon as look at it!</q></p>
+        <p>This speech caused a remarkable sensation among the party.  Some of the birds hurried off at once: one old Magpie began wrapping itself up  very carefully, remarking, <q>I really must be getting home; the night-air doesn&rsquo;t  suit my throat!</q> and a Canary called out in a trembling voice to its children, <q>Come away, my dears! It&rsquo;s high time you were all in bed!</q> On various pretexts  they all moved off, and Alice was soon left alone.</p>
+    </blockquote>
+    <p>When people start making excuses, and shuffling off, it's often a sign you have said something you shouldn't have.</p>
+</div>
+</body>
+</html>

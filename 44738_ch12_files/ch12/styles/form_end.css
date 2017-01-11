@@ -1,0 +1,28 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #FFF;
+}
+form {
+    margin-left: 60px;
+    display: table;
+}
+textarea {
+    height: 100px;
+    width: 300px;
+}
+form p, div.radio {
+    display: table-row;
+}
+label, input, textarea, span, .radio p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+    margin: 6px;
+}
+.radio input, .radio label {
+    display: inline;
+}
+input[type="submit"], select {
+    display: inline-block;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background-repeat: Two Values</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+#space, #round {
+    background-image: url(images/flower2.png);
+    background-color: #EFECCA;
+    width: 300px;
+    height: 260px;
+    margin: 20px;
+    float: left;
+    border: 2px solid #999;
+}
+#space {
+   background-repeat: space repeat;
+}
+#round {
+    background-repeat: round repeat;
+}
+</style>
+</head>
+
+<body>
+<div id="space">
+    <h1>space repeat</h1>
+</div>
+<div id="round">
+    <h1>round repeat</h1>
+</div>
+</body>
+</html>

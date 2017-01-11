@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rotate Elements</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+    min-width: 884px;
+}
+img {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #FFF;
+}
+/* Browser-specific properties */
+img:first-child {
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+}
+img:last-child {
+    -moz-transform: rotate(342deg);
+    -ms-transform: rotate(342deg);
+    -o-transform: rotate(342deg);
+    -webkit-transform: rotate(342deg);
+}
+/* Standard property */
+img:first-child {
+    transform: rotate(-18deg);
+}
+img:last-child {
+    transform: rotate(342deg);
+}
+</style>
+</head>
+
+<body>
+<div id="images"><img src="images/nice_market.jpg" width="400" height="266" alt="Flower market in Nice"><img src="images/nice_seafront.jpg" width="400" height="266" alt="Nice seafront"></div>
+</body>
+</html>

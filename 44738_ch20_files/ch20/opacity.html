@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Opacity and Alpha Transparency</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #D2E1E6;
+}
+#wrapper {
+    width: 800px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(images/monaco.jpg);
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+#alpha, #opacity {
+    width: 300px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 15px solid;
+    border-color: rgb(217,79,17);
+    border-radius: 15px;
+    float: left;
+}
+#alpha {
+    background: rgba(255,255,255, 0.3);
+    border-color: rgba(217,79,17,0.3);
+}
+#opacity {
+    opacity: .3;
+}
+h1 {
+    margin-top: 0.25em;
+}
+</style>
+</head>
+
+<body>
+<div id="alpha">
+    <h1>Monaco</h1>
+    <p>Monaco has a mild and sunny climate, with more than 300 days of sunshine a year. It also levies no income tax on individuals. No wonder so many crowd into this tiny country.</p>
+</div>
+<div id="opacity">
+    <h1>Monaco</h1>
+    <p>Monaco has a mild and sunny climate, with more than 300 days of sunshine a year. It also levies no income tax on individuals. No wonder so many crowd into this tiny country.</p>
+</div>
+</body>
+</html>

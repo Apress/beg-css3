@@ -1,0 +1,175 @@
+body {
+    background-color: #FFF;
+    font-family:"Arial Black", Gadget, sans-serif;
+}
+/* Browser-specific syntax */
+@-moz-keyframes bounce {
+    from {
+        -moz-transform: translateY(-3.5em);
+    }
+    60% {
+        -moz-transform: translateY(0);
+        -moz-animation-timing-function: ease-in;
+    }
+    70% {
+        -moz-transform: translateY(-.2em);
+    }
+    80% {
+        -moz-transform: translateY(0);
+        -moz-animation-timing-function: ease-in;
+    }
+    90% {
+        -moz-transform: translateY(-.1em);
+    }
+    to {
+        -moz-transform: translateY(0);
+    }
+}
+@-moz-keyframes glow {
+    from {
+        text-shadow: -5px -5px 11px rgba(255,102,0,0.8);
+    }
+    40% {
+        text-shadow: 5px -5px 11px rgba(255,102,0,0.8);
+        -moz-animation-timing-function: linear;
+    }
+    70% {
+        text-shadow: 5px 0 11px rgba(255,102,0,0.8);
+        -moz-animation-timing-function: ease-in;
+    }
+    to {
+        text-shadow: 5px 5px 11px rgba(255,102,0,0.8);
+    }
+}
+@-o-keyframes bounce {
+    from {
+        -o-transform: translateY(-3.5em);
+    }
+    60% {
+        -o-transform: translateY(0);
+        -o-animation-timing-function: ease-in;
+    }
+    70% {
+        -o-transform: translateY(-.2em);
+    }
+    80% {
+        -o-transform: translateY(0);
+        -o-animation-timing-function: ease-in;
+    }
+    90% {
+        -o-transform: translateY(-.1em);
+    }
+    to {
+        -o-transform: translateY(0);
+    }
+}
+@-o-keyframes glow {
+    from {
+        text-shadow: -5px -5px 11px rgba(255,102,0,0.8);
+    }
+    40% {
+        text-shadow: 5px -5px 11px rgba(255,102,0,0.8);
+        -o-animation-timing-function: linear;
+    }
+    70% {
+        text-shadow: 5px 0 11px rgba(255,102,0,0.8);
+        -o-animation-timing-function: ease-in;
+    }
+    to {
+        text-shadow: 5px 5px 11px rgba(255,102,0,0.8);
+    }
+}
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translateY(-3.5em);
+    }
+    60% {
+        -webkit-transform: translateY(0);
+        -webkit-animation-timing-function: ease-in;
+    }
+    70% {
+        -webkit-transform: translateY(-.2em);
+    }
+    80% {
+        -webkit-transform: translateY(0);
+        -webkit-animation-timing-function: ease-in;
+    }
+    90% {
+        -webkit-transform: translateY(-.1em);
+    }
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: -5px -5px 11px rgba(255,102,0,0.8);
+    }
+    40% {
+        text-shadow: 5px -5px 11px rgba(255,102,0,0.8);
+        -webkit-animation-timing-function: linear;
+    }
+    70% {
+        text-shadow: 5px 0 11px rgba(255,102,0,0.8);
+        -webkit-animation-timing-function: ease-in;
+    }
+    to {
+        text-shadow: 5px 5px 11px rgba(255,102,0,0.8);
+    }
+}
+h1 {
+    -moz-animation: bounce 2s ease-out,
+                    glow 2s 2s ease-out forwards;
+    -o-animation: bounce 2s ease-out,
+                  glow 2s 2s ease-out forwards;
+    -webkit-animation: bounce 2s ease-out,
+                       glow 2s 2s ease-out forwards;
+}
+
+/* Standard syntax */
+@keyframes bounce {
+    from {
+        transform: translateY(-3.5em);
+    }
+    60% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    70% {
+        transform: translateY(-.2em);
+    }
+    80% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(-.1em);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes glow {
+    from {
+        text-shadow: -5px -5px 11px rgba(255,102,0,0.8);
+    }
+    40% {
+        text-shadow: 5px -5px 11px rgba(255,102,0,0.8);
+        animation-timing-function: linear;
+    }
+    70% {
+        text-shadow: 5px 0 11px rgba(255,102,0,0.8);
+        animation-timing-function: ease-in;
+    }
+    to {
+        text-shadow: 5px 5px 11px rgba(255,102,0,0.8);
+    }
+}
+h1 {
+    color: #900;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    animation: bounce 2s ease-out,
+               glow 2s 2s ease-out forwards;
+}

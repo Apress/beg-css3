@@ -1,0 +1,12 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+small {
+    font-size: 12px;
+    font-style: italic;
+    display: inline-block;
+    width: 650px;
+    text-align: center;
+}

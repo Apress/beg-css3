@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Combining Shorthand Properties</title>
+<style type="text/css">
+body {
+    background-color: #C7DEDE;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 180%;
+}
+div {
+    color: #FFF;
+    background-color: #066;
+    width: 200px;
+    text-align: center;
+    padding: .5em 0;
+    float: left;
+    margin: 25px 0 0 100px;
+}
+#correct {
+    border: solid 6px;
+    border-color: #5C9D9D #003636 #003636 #5C9D9D;
+}
+#incorrect {
+    border-color: #003636 #5C9D9D #5C9D9D #003636;
+    /* This overrides the border-color properties */
+    border: solid 6px;
+}
+</style>
+</head>
+
+<body>
+<div id="correct">Embossed</div>
+<div id="incorrect">Indented</div>
+</body>
+</html>

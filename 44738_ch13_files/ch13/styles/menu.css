@@ -1,0 +1,72 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#nav li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    float: left;
+    position: relative;
+}
+#nav a {
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    border-left: #CCC 1px solid;
+    color: #e7e5e5;
+    background-color: #736C56;
+    font-weight: bold;
+    text-decoration: none;
+}
+#nav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 150px;
+    /* Fix for IE 7 */
+    background-color: #FFF;
+}
+#nav ul ul {
+    left: 150px;
+    top: 5px;
+}
+#nav li:hover > ul {
+    display: block;
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: #CCC 1px solid;  
+}
+#nav li:hover > a, #nav a:focus {
+    background-color: #A38E6D;
+    color: #444;
+}
+#nav ul a {
+    background-color: #8C3A40;
+}
+#nav ul li:hover > a {
+    background-color: #C2644F;
+}
+#nav li:first-child a, #nav ul ul li:first-child, #nav ul a {
+    border: none;
+}
+#nav > li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+#nav > li:last-child a {
+    border-radius: 0 10px 10px 0;
+}
+#nav ul li:first-child a {
+    border-radius: 10px 10px 0 0;
+}
+#nav ul li:last-child a {
+    border-radius: 0 0 10px 10px;
+}
+    

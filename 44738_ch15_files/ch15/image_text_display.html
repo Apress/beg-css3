@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Generated Image and Text</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    margin-left: 20px;
+    width: 650px;
+}
+.note, .tip, .caution {
+    border: 1px #000;
+    border-style: solid none;
+    padding: 0.5em 0;
+}
+.note::before {
+    content: url(images/square_gray.gif) ' Note ';
+    font-weight: bold;
+    display: block;
+}
+.tip::before {
+    content: url(images/square_gray.gif) ' Tip ';
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: 24px;
+}
+.caution::before {
+    content: url(images/square_gray.gif) ' Caution ';
+    font-weight: bold;
+    color: #F8A809;
+    font-size: 24px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+</style>
+</head>
+
+<body>
+<p class="note">The <code>::before</code> and <code>::after</code> pseudo-elements can be used to insert text and images automatically.</p>
+<p class="tip">Use the pseudo-elements for common icons and introductory text.</p>
+<p class="caution">This can become addictive.</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transform Order Matters</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 500px;
+    margin-left: 10px;
+}
+#images {
+    margin-left: 50px;
+    margin-top: -50px;
+}
+/* Because the local coordinate system is flipped 90 degrees counterclockwise, 
+   you need to use translateX() to move the heading down the page. */
+/* Browser-specific properties */
+h1 {
+    -moz-transform: rotate(-.25turn) translateX(-215px);
+    -ms-transform: rotate(-.25turn) translateX(-215px);
+    -o-transform: rotate(-.25turn) translateX(-215px);
+    -webkit-transform: rotate(-.25turn) translateX(-215px);
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+/* Standard properties */
+h1 {
+    transform: rotate(-.25turn) translateX(-215px);
+    transform-origin: left top;
+}
+</style>
+</head>
+
+<body>
+<h1>Nice Market</h1>
+<div id="images"><img src="images/nice_market.jpg" width="400" height="266" alt="Flower market in Nice"></div>
+<p>Nice has a great open-air market just one block away from the seafront at the eastern end of town. It's a real local market, with locally grown produce, and it's used by the townspeople and local restaurants.</p>
+</body>
+</html>

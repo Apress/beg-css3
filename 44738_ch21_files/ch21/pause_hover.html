@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pause on Hover</title>
+<style>
+/* Browser-specific syntax */
+@-moz-keyframes pulsate {
+    from {
+        -moz-transform: scale(1);
+    }
+    25% {
+        -moz-transform: scale(1.2);
+    }
+    50% {
+        -moz-transform: scale(1.1);
+    }
+    75% {
+        -moz-transform: scale(1.2);
+    }
+    to {
+        -moz-transform: scale(1);
+    }
+}
+#box {
+    -moz-animation-name: pulsate;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+}
+@-o-keyframes pulsate {
+    from {
+        -o-transform: scale(1);
+    }
+    25% {
+        -o-transform: scale(1.2);
+    }
+    50% {
+        -o-transform: scale(1.1);
+    }
+    75% {
+        -o-transform: scale(1.2);
+    }
+    to {
+        -o-transform: scale(1);
+    }
+}
+#box {
+    -o-animation-name: pulsate;
+    -o-animation-duration: 1s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+    from {
+        -webkit-transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1.2);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(1.2);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+#box {
+    -webkit-animation-name: pulsate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+#box:hover {
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+/* Standard syntax */
+@keyframes pulsate {
+    from {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+#box {
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    background-color: #900;
+    animation-name: pulsate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#box:hover {
+    animation-play-state: paused;
+}
+</style>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>

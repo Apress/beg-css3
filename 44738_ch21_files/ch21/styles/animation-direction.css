@@ -1,0 +1,112 @@
+label {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 220px;
+    margin-top: 20px;
+    float: left;
+    clear: left;
+}
+button {
+    width: 45px;
+    text-align: center;
+    font-size:20px;
+}
+@-moz-keyframes slide {
+    from {
+        -moz-transform: translateX(0);
+    }
+    to {
+        -moz-transform: translateX(500px);
+    }
+}
+@-o-keyframes slide {
+    from {
+        -o-transform: translateX(0);
+    }
+    to {
+        -o-transform: translateX(500px);
+    }
+}
+@-webkit-keyframes slide {
+    from {
+        -webkit-transform: translateX(0);
+    }
+    to {
+        -webkit-transform: translateX(500px);
+    }
+}
+div {
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-duration: 2s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+.animated {
+    -moz-animation-name: slide;
+    -o-animation-name: slide;
+    -webkit-animation-name: slide;
+}
+#normal {
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    -webkit-animation-direction: normal;
+}
+#rev {
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+}
+#alternate {
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+#altrev {
+    -moz-animation-direction: alternate-reverse;
+    -o-animation-direction: alternate-reverse;
+    -webkit-animation-direction: alternate-reverse;
+}
+/* Standard syntax */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.animated {
+    animation-name: slide;
+}
+#normal {
+    background-color: #900;
+    animation-direction: normal;
+}
+#rev {
+    background-color: #099;
+    animation-direction: reverse;
+}
+#alternate {
+    background-color: #C90;
+    animation-direction: alternate;
+}
+#altrev {
+    background-color: #FCC;
+    animation-direction: alternate-reverse;
+}

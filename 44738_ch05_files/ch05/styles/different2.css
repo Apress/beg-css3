@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'AurulentSans Regular';
+    src: url('fonts/AurulentSans-Regular-webfont.eot');
+    src: url('fonts/AurulentSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),  
+url('fonts/AurulentSans-Regular-webfont.woff') format('woff'),
+url('fonts/AurulentSans-Regular-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-Regular-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'AurulentSans Bold';
+    src: url('fonts/AurulentSans-Bold-webfont.eot');
+    src: url('fonts/AurulentSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/AurulentSans-Bold-webfont.woff') format('woff'),
+url('fonts/AurulentSans-Bold-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-Bold-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'AurulentSans Italic';
+    src: url('fonts/AurulentSans-Italic-webfont.eot');
+    src: url('fonts/AurulentSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/AurulentSans-Italic-webfont.woff') format('woff'),
+url('fonts/AurulentSans-Italic-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-Italic-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'AurulentSans BoldItalic';
+    src: url('fonts/AurulentSans-BoldItalic-webfont.eot');
+    src: url('fonts/AurulentSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/AurulentSans-BoldItalic-webfont.woff') format('woff'),
+url('fonts/AurulentSans-BoldItalic-webfont.ttf') format('truetype'),
+url('fonts/AurulentSans-BoldItalic-webfont.svg') format('svg');
+}
+body {
+    font-family: 'AurulentSans Regular', sans-serif;
+}
+/* Headings and bold text */
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-family: 'AurulentSans Bold', sans-serif;
+}
+/* Regular italic */
+i, em {
+    font-family: 'AurulentSans Italic', sans-serif;
+}
+/* Bold italic */
+b i, h1 i, strong em {
+    font-family: 'AurulentSans BoldItalic', sans-serif;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background with Alpha Transparency</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #D2E1E6;
+    background-image: url(images/bg_tile.jpg);
+}
+#wrapper {
+    width: 800px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(images/monaco.jpg);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+#description {
+    width: 300px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.9);
+    background-clip: padding-box;
+    /*border: rgb(255,102,0) 15px solid;
+     border: rgba(255,102,0,0.6) 15px solid;*/
+    border: 15px solid;
+    border-color: rgb(217,79,17);
+     border-color: rgba(217,79,17,0.6);
+    border-radius: 40px;
+}
+h1 {
+    margin-top: 0.25em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="description">
+        <h1>Monaco</h1>
+        <p>Monaco has a mild and sunny climate, with more than 300 days of sunshine a year. It also levies no income tax on individuals. No wonder so many crowd into this tiny country.</p>
+    </div>
+</div>
+</body>
+</html>

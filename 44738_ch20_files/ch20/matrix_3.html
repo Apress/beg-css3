@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flipping Elements with scale()</title>
+<style>
+div {
+    background-color: #903;
+    color: #FFF;
+    font-size: 24px;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    width: 120px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+}
+/* Browser-specific properties */
+#horizontal {
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#vertical {
+    -moz-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+    -o-transform: matrix(1, 0, 0, -1, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#shrinkflip {
+    -moz-transform: matrix(-.5, 0, 0, -.5, 0, 0);
+    -ms-transform: matrix(-.5, 0, 0, -.5, 0, 0);
+    -o-transform: matrix(-.5, 0, 0, -.5, 0, 0);
+    -webkit-transform: matrix(-.5, 0, 0, -.5, 0, 0);
+}
+/* Standard property */
+#horizontal {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#vertical {
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#shrinkflip {
+    transform: matrix(-.5, 0, 0, -.5, 0, 0);
+}
+</style>
+</head>
+
+<body>
+<div>Flip me!</div>
+<div id="horizontal">Flip me!</div>
+<div id="vertical">Flip me!</div>
+<div id="shrinkflip">Flip me!</div>
+</body>
+</html>

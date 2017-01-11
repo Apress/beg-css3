@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Sprites</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: 50px;
+}
+.icons {
+    background-image: url('images/icons.png');
+    background-repeat: no-repeat;
+}
+.rss {
+    padding-left: 30px;
+}
+.phone {
+    padding-left: 25px;
+    background-position: left -40px;
+}
+a[href^='mailto:'] {
+    padding-left: 30px;
+    background-position: left -80px;
+}
+a[href$='.pdf'] {
+    padding-right: 24px;
+    background-position: right -120px;
+}
+a[href^="http://"] {
+    padding-right: 25px;
+    background-position: right -160px;
+}
+@media only screen and (resolution: 2dppx), screen and (-webkit-device-pixel-ratio: 2) {
+    .icons {
+        background-image: url(images/icons_large.png);
+        background-size: 35px 179px;
+    }
+}
+</style>
+</head>
+
+<body>
+<p><a href="dummy.pdf" class="icons">Download the brochure</a></p>
+<p><a href="mailto:david@example.com" class="icons">Contact Us</a></p>
+<p><a href="http://www.apress.com/" class="icons">Apress&#8212;Books for Professionals by Professionals</a></p>
+<p class="phone icons"><span>800-555-0199</span></p>
+<p><a href="#" class="icons rss">RSS Feed</a></p>
+</body>
+</html>

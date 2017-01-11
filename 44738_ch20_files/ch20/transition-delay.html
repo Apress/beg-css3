@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Delayed Transition</title>
+<style>
+/* Browser-specific properties */
+#box1 {
+    -moz-transition-property: background-color, width, height;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: 0s, 1s, 2s;
+    -o-transition-property: background-color, width, height;
+    -o-transition-duration: 1s;
+    -o-transition-delay: 0s, 1s, 2s;
+    -webkit-transition-property: background-color, width, height;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: 0s, 1s, 2s;
+}
+/* Standard properties */
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #F00;
+    margin: 10px;
+    transition-property: background-color, width, height;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 2s;
+}
+#box1:hover {
+    background-color: #006;
+    width: 150px;
+    height: 150px;
+}
+</style>
+</head>
+
+<body>
+<div id="box1"></div>
+<p>Some text under the box.</p>
+</body>
+</html>

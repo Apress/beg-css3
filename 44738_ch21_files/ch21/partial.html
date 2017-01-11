@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Partial Iteration</title>
+<style>
+/* Browser-specific syntax */
+@-moz-keyframes slide {
+    from {
+        -moz-transform: translateX(0);
+    }
+    to {
+        -moz-transform: translateX(500px);
+    }
+}
+#partial {
+    -moz-animation-name: slide;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1.5;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+}
+@-o-keyframes slide {
+    from {
+        -o-transform: translateX(0);
+    }
+    to {
+        -o-transform: translateX(500px);
+    }
+}
+#partial {
+    -o-animation-name: slide;
+    -o-animation-duration: 2s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: 1.5;
+    -o-animation-direction: alternate;
+    -o-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide {
+    from {
+        -webkit-transform: translateX(0);
+    }
+    to {
+        -webkit-transform: translateX(500px);
+    }
+}
+#partial {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1.5;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Standard syntax */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+#partial {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #036;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1.5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+</style>
+</head>
+
+<body>
+<div id="partial"></div>
+</body>
+</html>

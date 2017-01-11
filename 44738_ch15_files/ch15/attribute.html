@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Generating Content from an Attribute</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    margin-left: 20px;
+    width: 650px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #066;
+}
+a[href^="http://"]::after {
+    content: ' (' attr(href) ') ';
+}
+</style>
+</head>
+
+<body>
+<p>If you find a problem, be sure to check <a href="http://foundationphp.com/">my website</a> for any updates or corrections.</p>
+<p>Make sure to see the <a href="image_text_after.html">demonstration of the ::after pseudo-element</a>.</p>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Query Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: #EFECCA;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 24px;
+}
+div {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+#landscape, #iPhone_port, #iPhone_land, #iPad_port, #iPad_land {
+    display: none;
+}
+/* Basic landscape */
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: #9C9;
+    }
+    #basic, #iPhone_port, #iPhone_land, #iPad_port, #iPad_land {
+    display: none;
+}
+     #landscape {
+         display: block;
+     }
+}
+/* iPhone portrait */
+@media only screen and (device-width: 320px) and (device-height: 480px) and (orientation: portrait){
+    body {
+        background-color: #903;
+        color: #FFF;
+    }
+    #basic, #landscape, #iPhone_land, #iPad_port, #iPad_land {
+    display: none;
+}
+    #iPhone_port {
+        display: block;
+    }
+}
+/* iPhone landscape */
+@media only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    body {
+        background-color: #03C;
+        color: #FFF;
+    }
+    #basic, #landscape, #iPhone_port, #iPad_port, #iPad_land {
+    display: none;
+}
+    #iPhone_land {
+        display: block;
+    }
+}
+/* iPad portrait */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    body {
+        background-color: #0CC;
+    }
+    #basic, #landscape, #iPhone_port, #iPhone_land, #iPad_land {
+    display: none;
+}
+    #iPad_port {
+        display: block;
+    }
+}
+/* iPad landscape */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    body {
+        background-color: #FC0;
+    }
+    #basic, #landscape, #iPhone_port, #iPhone_land, #iPad_port {
+    display: none;
+}
+     #iPad_land {
+         display: block;
+     }
+}
+</style>
+</head>
+
+<body>
+<div id="basic">Desktop or portrait</div>
+<div id="landscape">Landscape orientation</div>
+<div id="iPhone_port">iPhone/iPod touch portrait</div>
+<div id="iPhone_land">iPhone/iPod touch landscape</div>
+<div id="iPad_port">iPad portrait</div>
+<div id="iPad_land">iPad landscape</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background Percentages</title>
+<style>
+#canvas {
+    margin: 40px;
+    border: 1px solid #000;
+    background-image: url(images/checker.png);
+    background-repeat: no-repeat;
+    background-position: 30% 80%;
+}
+</style>
+</head>
+
+<body>
+<canvas id="canvas" width="500" height="300">Your browser doesn't support HTML5 canvas.</canvas>
+<script>
+var canvas = document.getElementById('canvas'),
+    c = canvas.getContext('2d'),
+	w = canvas.width,
+	h = canvas.height,
+	x, y;
+c.strokeStyle = '#000';
+c.lineWidth = 1;
+for (var i = 1; i < 10; i++) {
+	x = w/10*i;
+	y = h/10*i;
+	c.moveTo(x, 0);
+	c.lineTo(x, h);
+	c.moveTo(0, y);
+	c.lineTo(w, y);
+}
+c.stroke();
+</script>
+</body>
+</html>

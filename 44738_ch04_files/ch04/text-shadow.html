@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Text Shadow</title>
+<style>
+body {
+	background-color: #FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+h1 {
+	font-size: 36px;
+	color: teal;
+}
+.no-blur {
+	text-shadow: 0.1em 0.1em rgba(0,0,0,0.4);
+}
+.blur {
+	text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.4);
+}
+.color-blur {
+	text-shadow: 0.1em 0.1em 0.2em rgba(0,102,102,0.4);
+}
+</style>
+</head>
+
+<body>
+<h1 class="no-blur">No Blur</h1>
+<h1 class="blur">With Blur</h1>
+<h1 class="color-blur">With Color Blur</h1>
+</body>
+</html>

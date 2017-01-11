@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using background-clip</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#box1, #box2, #box3 {
+    width: 200px;
+    padding: 20px;
+    border: 20px rgba(255, 0 , 0 , 0.2) solid;
+    float: left;
+    margin-left: 10px;
+    background-image: url(images/bg_tile.jpg);
+}
+#box1 {
+    background-origin: border-box;
+    background-clip: border-box;
+}
+#box2 {
+    background-origin: padding-box;
+    background-clip: padding-box;
+}
+#box3 {
+    background-origin: content-box;
+    background-clip: content-box;
+}
+</style>
+</head>
+
+<body>
+<div id="box1">
+    <p>Soon her eye fell on a little glass box that was lying under  the table: she opened it, and found in it a very small cake, on which the words  &lsquo;EAT ME&rsquo; were beautifully marked in currants.</p>
+</div>
+<div id="box2">
+    <p>Soon her eye fell on a little glass box that was lying under  the table: she opened it, and found in it a very small cake, on which the words  &lsquo;EAT ME&rsquo; were beautifully marked in currants.</p>
+</div>
+<div id="box3">
+    <p>Soon her eye fell on a little glass box that was lying under  the table: she opened it, and found in it a very small cake, on which the words  &lsquo;EAT ME&rsquo; were beautifully marked in currants.</p>
+</div>
+</body>
+</html>

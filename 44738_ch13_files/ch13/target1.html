@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using the :target Pseudo-class</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+ol ol {
+    list-style-type: decimal;
+}
+h1, h2, h3 {
+    color: #063;
+}
+:target {
+    background-color: rgba(0,102,51,0.2);
+    padding: 3px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Beginning CSS3</h1>
+    <ol id="menu">
+        <li><a href="#part1">CSS Basics</a>
+            <ol>
+                <li> <a href="#ch1">Introducing CSS&#8212;the Language of Web Design</a></li>
+                <li><a href="#ch2"> Using Basic Selectors</a></li>
+                <li><a href="#ch3"> Specifying Sizes, Colors, and Files</a></li>
+            </ol>
+        </li>
+        <li><a href="#part2">Working with Text </a>
+            <ol start="4">
+                <li> <a href="#ch4">Styling Text</a></li>
+                <li><a href="#ch5">Embedding Web Fonts</a></li>
+            </ol>
+        </li>
+        <li><a href="#part3">CSS Page Layout </a>
+            <ol start="6">
+                <li><a href="#ch6">Understanding the CSS Box Model</a></li>
+                <li><a href="#ch7">Floating Elements for Layout</a></li>
+                <li><a href="#ch8">Adding Backgrounds</a></li>
+                <li><a href="#ch9">Adding Borders and Drop Shadows</a></li>
+                <li><a href="#ch10">Styling Lists and Navigation Menus</a></li>
+                <li><a href="#ch11">Positioning Elements Precisely</a></li>
+                <li><a href="#ch12">Cross-Browser Layout Techniques</a></li>
+            </ol>
+        </li>
+    </ol>
+    <h2 id="part1">Part I: CSS Basics</h2>
+    <h3 id="ch1">Chapter 1: Introducing CSS—the Language of Web Design </h3>
+    <p>The opening chapter presents a brief history of CSS,  explaining the three levels of the CSS specification and how browsers ignore  new features that they don&rsquo;t recognize. This is followed by coverage of CSS  basics, such as how to write a style rule, where style rules are written, and  guidelines for following best practices.</p>
+    <ul>
+        <li>A short history of CSS</li>
+        <li>So, how do I use CSS?</li>
+        <li>Writing CSS well</li>
+    </ul>
+    <p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch2">Chapter 2: Using Basic Selectors </h3>
+    <p>Choosing the right selector is the key to working successfully  with CSS. Although the CSS3 specification defines more than 40 selectors, not  everyone uses the latest browser. This chapter concentrates on a smaller  range of selectors supported by IE 7,  which form a solid basis for styles recognized by the vast majority of  browsers. </p>
+    <ul>
+        <li>How selectors work—a quick       overview of the DOM</li>
+        <li>Choosing which selector to       use</li>
+        <li>Basic selector exercise</li>
+        <li>Styling the cursor</li>
+        <li>Styling links</li>
+        <li>Determining which selector       wins in case of a conflict</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch3">Chapter 3: Specifying Sizes, Colors, and Files </h3>
+    <p>A technical overview of CSS units of measurement, color  formats, and specifying the location of files (mainly for background  images).Covering both CSS2.1 and CSS3 values.</p>
+    <ul>
+        <li>Specifying size and other       units of measurement</li>
+        <li>Setting color values</li>
+        <li>Specifying background       images and other files</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h2 id="part2">Part II: Working with Text </h2>
+    <h3 id="ch4">Chapter 4: Styling Text </h3>
+    <p>Presenting text in a visually appealing manner is an  important part of web design. Text must not only look good, but it must be easy  to read. This chapter covers the full range of text properties—choosing fonts,  font sizes, colors, weight, and spacing. It covers all the CSS2.1 text  properties plus widely supported CSS3 properties, including adding shadows to  text.</p>
+    <ul>
+        <li>Selecting and adjusting       fonts</li>
+        <li>Changing the color of text</li>
+        <li>Formatting text</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch5">Chapter 5: Embedding Web Fonts </h3>
+    <p>For years, web designers have been frustrated by the narrow  range of &ldquo;web-safe&rdquo; fonts. Although Internet Explorer 4 introduced the  technology for embedding fonts as far back as 1997, licensing issues stood in  the way of its widespread adoption. The licensing issues have now been  resolved, making it possible to use a much wider range of fonts with the CSS  @font-face rule.</p>
+    <ul>
+        <li>Understanding font       formats</li>
+        <li>Obtaining fonts</li>
+        <li>Embedding fonts</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h2 id="part3">Part III: CSS Page Layout</h2>
+    <h3 id="ch6">Chapter 6: Understanding the CSS Box Model </h3>
+    <p>The CSS box model lies at the heart of current layout  techniques. This chapter explains how browsers handle width, height, and  vertical and horizontal spacing in both inline and block-level elements. It  also shows how to use the CSS display property to change the default way  elements are treated. Brief mention will also be made of the CSS3 box-sizing  property, which changes how width and height are calculated for individual  elements.</p>
+    <ul>
+        <li>Introducing the CSS box       model</li>
+        <li>Understanding the       difference between padding and margin</li>
+        <li>Specifying minimum and       maximum widths and heights</li>
+        <li>Using the display       property to change how elements are displayed</li>
+        <li>Controlling overflow and       visibility</li>
+        <li>Can you turn the clock       back with box-sizing?</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch7">Chapter 7: Floating Elements for Layout</h3>
+    <p>CSS3 promises to change the way web pages are laid out, but  it will be many years before the proposed grid and flexible box layout modules  are universally supported. In the meantime, floating elements to sit alongside  each other horizontally remains one of the most important layout techniques.  This chapter explains how floats work, and highlights how to deal with common  problems.</p>
+    <ul>
+        <li>Flowing text around images</li>
+        <li>Centering images</li>
+        <li>Tackling problems with       floats</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch8">Chapter 8: Adding Backgrounds </h3>
+    <p>The CSS3 Backgrounds and Borders module has already reached  Candidate Recommendation status, so is widely supported by modern browsers.  Because of the large amount of material to cover, borders will be covered  separately. This chapter describes how backgrounds work in CSS, including the  use of transparent backgrounds, background images, and how to position  background elements.</p>
+    <ul>
+        <li>Changing the background color       of an element</li>
+        <li>Adding background images</li>
+        <li>Controlling how background       images repeat</li>
+        <li>Controlling the position       of background images</li>
+        <li>Adjusting the background       origin</li>
+        <li>Scaling background images</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch9">Chapter 9: Adding Borders and Drop Shadows </h3>
+    <p>CSS2.1 creates only simple borders, but CSS3 opens up a  whole range of new options—rounded corners, drop shadows, and border images.  The chapter also covers the outline property which is subtly different from  border.</p>
+    <ul>
+        <li>Creating a simple border</li>
+        <li>Creating rounded corners       without images</li>
+        <li>Adding drop shadows       without images</li>
+        <li>Using images for borders</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch10">Chapter 10: Styling Lists and Navigation Menus </h3>
+    <p>This chapter looks at how to style numbered and bulleted  lists, as well as converting a list into a navigation menu.</p>
+    <ul>
+        <li>Styling unordered and       ordered lists</li>
+        <li>Continuing a numbered       list after a break</li>
+        <li>Creating a navigation bar       from a list</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch11">Chapter 11: Positioning Elements Precisely</h3>
+    <p>CSS positioning (CSS-P) allows you to position elements with  great precision. The basic concept is fairly simple, but CSS-P has many  pitfalls for the unwary. This chapter describes how different types of  positioning work, and explains how to avoid common problems.</p>
+    <ul>
+        <li>Understanding the different       types of positioning</li>
+        <li>Fixing elements inside       the browser window</li>
+        <li>Nudging elements with       relative positioning</li>
+        <li>Moving elements precisely       with absolute positioning</li>
+        <li>Common problems with CSS       positioning</li>
+        <li>Masking an image       with CSS</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+    <h3 id="ch12">Chapter 12: Cross-Browser Layout Techniques </h3>
+    <p>This chapter brings together most of the techniques covered  so far by describing common layout techniques that work in all browsers.</p>
+    <ul>
+        <li>Single-column layout</li>
+        <li>Two-column layout</li>
+        <li>Three-column layout</li>
+    </ul>
+<p><a href="#menu">Back to menu</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Controlling Table Widths</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+table {
+    width: 500px;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    table-layout: fixed;
+}
+td {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tr:first-child > td:first-child {
+    width: 50%;
+}
+tr:first-child > td:nth-child(2) {
+    width: 20%;
+}
+tr:first-child > td:nth-child(3) {
+    width: 10%;
+}
+tr:first-child > td:nth-child(4) {
+    width: 20%;
+}
+</style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>250px</td>
+        <td>100px</td>
+        <td>This column has a lot of content, but it should be only 50px wide.</td>
+        <td>100px</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Border Shorthand</title>
+<style>
+body {
+    margin: 20px 0 0;
+    padding: 0;
+    background-color: #FFF;
+    color: #000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+p {
+    text-indent: 2em;
+    width: 650px;
+    margin: 0 0 0 50px;
+}
+.codeblock, .tip {
+    text-indent: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.codeblock, code {
+    font-family:"Lucida Console", Monaco, monospace;
+}
+.tip {
+    text-indent: 0;
+    padding: 1em 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-style: solid none;
+    border-width: 1px;
+}
+.blob {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: #999;
+    margin-right: 0.25em;
+}
+    
+</style>
+</head>
+
+<body>
+<p>The <code>border</code> shorthand property also takes a space separated list of color,  style, and width values, which can be in any order. The same value is applied  to all four sides of the element. If a value isn&rsquo;t specified, the initial value  for the individual property is applied.</p>
+<p> If you want the same border on all four  sides, the <code>border</code> shorthand is  clearly the best option. For example, the following definition creates a 4px double red border around an element:</p>
+<p class="codeblock"> border: 4px double #F00;</p>
+<p> It couldn&rsquo;t really be much simpler.</p>
+<p class="tip"><span class="blob"></span><b>Tip</b> The default border style is <code>none</code>. If you forget to specify a style, no border is created, even if you set a color and/or width. To make a border invisible, but preserve its width, set its color to <code>transparent</code>. This can be useful to prevent an element from moving if you display a border only when you mouse over it.</p>
+</body>
+</html>

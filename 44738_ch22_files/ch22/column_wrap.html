@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multi-line Columns</title>
+<style>
+#container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    width: 400px;
+    height: 120px;
+}
+p {
+    margin: 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+    <p>Flex item 1</p>
+    <p>Flex item 2</p>
+    <p>Flex item 3</p>
+    <p>Flex item 4</p>
+</div>
+</body>
+</html>

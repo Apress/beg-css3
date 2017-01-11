@@ -1,0 +1,120 @@
+label {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 220px;
+    margin-top: 20px;
+    float: left;
+    clear: left;
+}
+button {
+    width: 45px;
+    text-align: center;
+    font-size:20px;
+}
+@-moz-keyframes slideback {
+    from {
+        -moz-transform: translateX(500px);
+    }
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes slideback {
+    from {
+        -o-transform: translateX(500px);
+    }
+    to {
+        -o-transform: translateX(0);
+    }
+}
+@-webkit-keyframes slideback {
+    from {
+        -webkit-transform: translateX(500px);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+div {
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 2;
+    -moz-animation-direction: alternate;
+    -moz-animation-delay: 2s;
+    -o-animation-duration: 2s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: 2;
+    -o-animation-direction: alternate;
+    -o-animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 2s;
+}
+.animated {
+    -moz-animation-name: slideback;
+    -o-animation-name: slideback;
+    -webkit-animation-name: slideback;
+}
+#none {
+    -moz-animation-fill-mode: none;
+    -o-animation-fill-mode: none;
+    -webkit-animation-fill-mode: none;
+}
+#forwards {
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+#backwards {
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+#both {
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+/* Standard syntax */
+@keyframes slideback {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+.animated {
+    animation-name: slideback;
+}
+#none {
+    background-color: #900;
+    animation-fill-mode: none;
+}
+#forwards {
+    background-color: #099;
+    animation-fill-mode: forwards;
+}
+#backwards {
+    background-color: #C90;
+    animation-fill-mode: backwards;
+}
+#both {
+    background-color: #FCC;
+    animation-fill-mode: both;
+}

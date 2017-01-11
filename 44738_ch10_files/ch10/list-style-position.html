@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Changing list-style-position</title>
+<style type="text/css">
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #FFF;
+}
+div {
+    width: 300px;
+    float: left;
+    margin-left: 25px;
+}
+.inside {
+    list-style-position: inside;
+}
+</style>
+</head>
+
+<body>
+<div>
+    <ul>
+        <li>By default, the bullet or number is outside the list item.</li>
+        <li>You can change this by setting list-style-position to inside.</li>
+    </ul>
+    <ol>
+        <li>Ordered lists are treated exactly the same.</li>
+        <li>The text is indented, but the number remains outside.</li>
+    </ol>
+</div>
+<div>
+    <ul class="inside">
+        <li>Here, list-style-position has been changed to inside.</li>
+        <li>As a result, the bullet is tucked inside the first line.</li>
+    </ul>
+    <ol class="inside">
+        <li>This ordered list also has list-style-position set to inside.</li>
+        <li>The  number is tucked inside the first line.</li>
+    </ol>
+</div>
+</body>
+</html>

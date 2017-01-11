@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skewing Elements</title>
+<style>
+div {
+    width: 240px;
+    background-color: #036;
+    color: #FFF;
+    margin: 35px;
+    float: left;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+}
+/* Browser-specific properties */
+#horizontal {
+    -moz-transform: matrix(1, 0, -.58, 1, 0, 0);
+    -ms-transform: matrix(1, 0, -.58, 1, 0, 0);
+    -o-transform: matrix(1, 0, -.58, 1, 0, 0);
+    -webkit-transform: matrix(1, 0, -.58, 1, 0, 0);
+}
+#vertical {
+    -moz-transform: matrix(1, .27, 0, 1, 0, 0);
+    -ms-transform: matrix(1, .27, 0, 1, 0, 0);
+    -o-transform: matrix(1, .27, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, .27, 0, 1, 0, 0);
+}
+/* Standard property */
+#horizontal {
+    transform: matrix(1, 0, -.58, 1, 0, 0);
+}
+#vertical {
+    transform: matrix(1, .27, 0, 1, 0, 0);
+}
+</style>
+</head>
+
+<body>
+<div id="horizontal">Skew me!</div>
+<div id="vertical">I&#8217;m skewed!</div>
+</body>
+</html>

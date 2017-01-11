@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pause Animations</title>
+<link href="styles/pause.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="animated">Annoying Animations</h1>
+<div class="animated" id="square"> </div>
+<script>
+function toggleAnimations(animated, paused) {
+    // Exit silently if old browser
+    if (!document.getElementsByClassName) return;
+    // Set default class names if no arguments passed to function
+    if (!paused) var paused = 'paused';
+    if (!animated) var animated = 'animated';
+    var animations = document.getElementsByClassName(animated);
+    // Exit silently if classList not supported
+    if (!animations[0].classList) return;
+    for (var i = 0; i < animations.length; i++) {
+        animations[i].addEventListener('click', (function(num) {
+            return function(e) {
+                this.classList.toggle(paused);
+            }
+        })(i), false);
+    }
+}
+toggleAnimations();
+</script>
+</body>
+</html>

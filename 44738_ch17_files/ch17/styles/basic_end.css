@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+    background-color: #D2E1E6;
+    background-image: url(../images/bg_tile.jpg);
+}
+#wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#header {
+    background-image: url(../images/yachts_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 127px;
+}
+#main, #aside {
+    margin: 15px 1% 10px 1%;
+    background-color: #FFF;
+    padding: 18px 0;
+}
+p {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+h2, h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0.25em;
+}
+h3:first-child {
+    margin-top: 0;
+}
+.floatleft {
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+.floatright {
+    float: right;
+    margin: 3px 0 3px 10px;
+}
+.figure.floatleft, .figure.floatright {
+    margin: 3px auto;
+    float: none;
+}
+.figcaption {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.figure {
+    max-width: 400px;
+    width: 90%;
+}
+.figure img {
+    max-width: 100%;
+}
+.portrait {
+    max-width: 260px;
+}
+.rounded {
+    border-radius: 15px;
+}
+.shadow {
+    -webkit-box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+    box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+}
+#nav {
+    list-style-type: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    height: 132px;
+}
+#nav li {
+    width: 48%;
+    margin-left: 2%;
+    margin-bottom: 5px;
+    float: left;
+    text-align: center;
+    display: inline;
+}
+#nav li a {
+    display: block;
+    padding: 0.75em 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F2F2F2;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+    box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+}
+#nav a:link, #nav a:visited {
+    background-color: #071726;
+}
+#nav a:hover, #nav a:active, #nav a:focus {
+    background-color: #326773;
+}

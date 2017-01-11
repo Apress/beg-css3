@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Preventing Scaling on Touch Screens</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+    width: 650px;
+    margin-left: 20px;
+}
+#images {
+    margin-left: 10px;
+}
+.scaleimg {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+/* Browser-specific properties */
+.scaleimg:first-child {
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+.scaleimg:last-child {
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -o-transform-origin: right top;
+    -webkit-transform-origin: right top;
+}
+.scaleimg:hover {
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+.noscale.scaleimg:hover {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+}
+/* Standard properties */
+.scaleimg:first-child {
+    transform-origin: left top;
+}
+.scaleimg:last-child {
+    transform-origin: right top;
+}
+.scaleimg:hover {
+    transform: scale(1.5);
+}
+.noscale.scaleimg:hover {
+    transform: scale(1);
+}
+</style>
+</head>
+
+<body>
+<div id="images"><img src="images/nice_market.jpg" alt="Flower market in Nice" width="268" height="178" class="scaleimg"><img src="images/nice_seafront.jpg" alt="Nice seafront" width="268" height="178" class="scaleimg"></div>
+<p>Nice is a jewel of the Côte d&rsquo;Azur in Southern France.  Surrounded by mountains, its crescent-shaped bay faces the Mediterranean,  blessing it with a mild winter climate. Even when the mountains are covered in  snow, the town normally remains snow-free.</p>
+<script>
+if ('ontouchstart' in window) {
+    function noScale(scale, noscale) {
+        var images = document.getElementsByClassName(scale);
+        for (var i = 0, len = images.length; i < len; i++) {
+            images[i].className = scale + ' ' + noscale;
+        }
+    }
+    noScale('scaleimg', 'noscale');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Tooltip</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+}
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+#casino {
+    position: relative;
+}
+#casino p {
+    position: absolute;
+    top: 60px;
+    left: -9999px;
+    background-color: #FFF;
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+#casino:hover p {
+    left: 140px;
+}
+a img {
+    border: none;
+}
+#casino a:hover {
+    cursor: default;
+}
+.floatleft {
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+.figcaption {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.shadow {
+    -webkit-box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+    box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Monaco and Monte Carlo</h1>
+    <div class="floatleft" id="casino"><a href="#"><img src="images/casino.jpg" alt="Casino at Monte Carlo" width="266" height="400" class="shadow" title=""></a>
+        <p>The casino also houses a theater suitable for opera and ballet.</p>
+    <div class="figcaption">Monte Carlo casino</div></div>
+    <p>Close to the Italian border lies the tiny city state of  Monaco, home to the rich and famous. Surrounded on three sides by France and by  the Mediterranean on the fourth, it&rsquo;s the world&rsquo;s second smallest country by  size. Monaco is a constitutional monarchy that has been ruled by the House of  Grimaldi with only brief interruptions since the thirteenth century.</p>
+    <p>Monaco is perhaps best known for the Formula 1 Grand Prix  that roars through the narrow streets and tight corners, and for the Monte  Carlo Casino. The casino was established by the House of Grimaldi in the  mid-nineteenth century as a means of saving the ruling household from  bankruptcy. It wasn&rsquo;t immediately successful, but gained great publicity in  1873 when Joseph Jagger became the man who &ldquo;broke the bank at Monte Carlo.&rdquo; The  bank was the amount of money kept on the roulette table by the croupier. Jagger  was the first to discover a bias in one of the roulette wheels and capitalize  on it.</p>
+</div>
+</body>
+</html>

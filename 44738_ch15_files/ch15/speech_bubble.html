@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Speech Bubble</title>
+<style>
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#quote {
+    background-color: #0CF;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    width: 200px;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 50%;
+    position: relative;
+}
+#quote::before, #quote::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+#quote::before {
+    background-color: #0CF;
+    height: 70px;
+    width: 70px;
+    bottom: -30px;
+    left: 60px;
+}
+#quote::after {
+    background-color: #000;
+    height: 60px;
+    width: 60px;
+    bottom: -45px;
+    left: 45px;
+}
+</style>
+</head>
+
+<body>
+<p id="quote">To err is human, but to really foul up requires a computer</p>
+</body>
+</html>

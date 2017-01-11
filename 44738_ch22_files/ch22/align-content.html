@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alignment Along the Cross Axis</title>
+<style>
+div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    width: 300px;
+    height: 120px;
+    margin: 10px;
+}
+#wrapper {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    width: auto;
+    height: 426px;
+    border: none;   
+}
+#flex-start {
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+#flex-end {
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+}
+#center {
+    -webkit-align-content: center;
+    align-content: center;
+}
+#space-between {
+    -webkit-align-content: space-between;
+    align-content: space-between;
+}
+#space-around {
+    -webkit-align-content: space-around;
+    align-content: space-around;
+}
+p {
+    margin: 0;
+    padding: 5px;
+    background-color: #CCC;
+    border: 1px solid #999;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="flex-start">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+    <div id="flex-end">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+    <div id="center">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+    <div id="space-between">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+    <div id="space-around">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+    <div id="stretch">
+        <p>Item 1</p>
+        <p>This is item 2</p>
+        <p>Flex item 3</p>
+        <p>This is Item 4</p>
+        <p>Item 5</p>
+        <p>Flex item 6</p>
+    </div>
+</div>
+</body>
+</html>
